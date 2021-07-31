@@ -18,8 +18,8 @@ export default {
   css: [],
 
   googleAnalytics: {
-    id: "280508138",
-    // dev: true,
+    id: "UA-203104329-1",
+    dev: true,
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -32,6 +32,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     "@nuxtjs/eslint-module",
+    "@nuxtjs/google-analytics",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -40,7 +41,6 @@ export default {
     "bootstrap-vue/nuxt",
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
-    "@nuxtjs/google-analytics",
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
