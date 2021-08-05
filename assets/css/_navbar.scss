@@ -1,0 +1,14 @@
+.navbar {
+  padding-left: 60px;
+  padding-right: 60px;
+  .navbar-nav {
+    min-width: 40%;
+    justify-content: space-between;
+    .nav-link {
+      color: $primaryColor;
+      @include fontMontserrat;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+}

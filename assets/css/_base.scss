@@ -1,0 +1,30 @@
+body {
+  background-color: $bgColor;
+  font-family: "Lato", sans-serif;
+  color: $primaryColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include fontMontserrat;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+.supertitle {
+  margin-bottom: 0;
+}
+
+.btn {
+  color: $primaryColor;
+  &:hover {
+    color: $primaryColor;
+  }
+}

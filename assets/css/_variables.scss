@@ -1,0 +1,15 @@
+$bgColor: #fffdf7;
+$primaryColor: #070032;
+$secondaryColor: #ffcb14;
+$accentColor: #8ba0b2;
+$titleColor: #100070;
+
+@mixin fontMontserrat {
+  font-family: "Montserrat", sans-serif;
+  color: $titleColor;
+  font-weight: 700;
+}
+
+@mixin smooth {
+  transition: all 0.3s;
+}

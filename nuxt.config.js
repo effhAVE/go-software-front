@@ -1,9 +1,12 @@
+import i18n from "./i18n"
+
 export default {
+  target: "static",
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "GO Software",
     htmlAttrs: {
-      lang: "en",
+      lang: "pl",
     },
     meta: [
       { charset: "utf-8" },
@@ -11,11 +14,23 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossorigin: true,
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&display=swap",
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ["~/assets/css/main.scss"],
 
   googleAnalytics: {
     id: "UA-203104329-1",
@@ -41,7 +56,14 @@ export default {
     "bootstrap-vue/nuxt",
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
+    "@nuxtjs/i18n",
   ],
+
+  bootstrapVue: {
+    icons: true,
+  },
+
+  i18n,
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

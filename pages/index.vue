@@ -1,7 +1,12 @@
 <template>
-  <Tutorial/>
+  <MainHero />
 </template>
 
 <script>
-export default {}
+import MainHero from "../components/home/MainHero.vue"
+export default {
+  components: {
+    MainHero,
+  },
+}
 </script>
