@@ -27,7 +27,7 @@
 
 .boat-bg {
   position: absolute;
-  left: 20%;
+  left: 25%;
   bottom: 50px;
   z-index: -1;
   animation: float 2.5s infinite alternate ease-in-out;
@@ -35,7 +35,7 @@
 
 .buoy-bg {
   position: absolute;
-  left: 40%;
+  left: 42%;
   bottom: 90px;
   z-index: -1;
   animation: buoyFloat 4s infinite alternate ease-in-out;

@@ -18,6 +18,20 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1.25em;
+}
+
+h4 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+p {
+  line-height: 2em;
+}
+
 .supertitle {
   margin-bottom: 0;
 }
@@ -26,5 +40,24 @@ h2 {
   color: $primaryColor;
   &:hover {
     color: $primaryColor;
+  }
+}
+
+.section {
+  min-height: 100vh;
+  padding: 70px 0;
+}
+
+.lowered {
+  margin-top: 70px;
+  &-xl {
+    margin-top: 140px;
+  }
+}
+
+.blob-primary {
+  color: white;
+  .title {
+    color: white;
   }
 }
