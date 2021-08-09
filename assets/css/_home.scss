@@ -66,12 +66,36 @@
 
 .section {
   &-title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
 .about-us {
   &-process {
     background-color: $primaryColor;
+  }
+}
+
+.has-blob {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+.card-item {
+  .card {
+    background: $bgColor;
   }
 }

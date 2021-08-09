@@ -35,4 +35,13 @@ export default {
     process4Desc: `Lorem ipsum to tekst składający się z łacińskich i
                 quasi-łacińskich wyrazów.`,
   },
+
+  offer: {
+    title: "OFERTA",
+    supertitle: "Co robimy?",
+    solutionsTitle: "Personalizowane rozwiązania webowe",
+    solutionsDesc: `Chcemy poznać Twój pomysł, problem lub cel, który chcesz osiagnąć.
+            Następnie dobierzemy rozwiązania najlepiej odpowiadające Twoim
+            wymaganiom.`,
+  },
 }

@@ -2,7 +2,7 @@
   <section class="section about-us">
     <b-container>
       <b-row class="blob-padding">
-        <b-col cols="5" class="about-us-blob blob-primary">
+        <b-col cols="5" class="has-blob about-us-blob blob-primary">
           <p class="supertitle">{{ $t("aboutUs.supertitle") }}</p>
           <h2 class="title section-title">{{ $t("aboutUs.title") }}</h2>
         </b-col>
@@ -18,7 +18,7 @@
           />
         </b-col>
       </b-row>
-      <b-row class="blob-padding">
+      <b-row class="py-5">
         <b-col cols="6" class="lowered">
           <h3>{{ $t("aboutUs.sectionTitle2") }}</h3>
           <p>
@@ -59,7 +59,7 @@
           </b-col>
         </b-row>
         <b-row class="justify-content-between">
-          <b-col cols="5">
+          <b-col cols="6">
             <div class="process-item">
               <img src="@@/assets/img/creation.png" alt="" class="m-0" />
               <h4>{{ $t("aboutUs.process3Name") }}</h4>
@@ -91,27 +91,18 @@
 .about-us {
   &-blob {
     &::before {
-      content: "";
-      position: absolute;
-      display: block;
       width: 500px;
       height: 500px;
       background: url("@@/assets/img/aboutus-blob.svg") no-repeat;
-      z-index: -1;
       top: -75px;
       left: -130px;
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 459px;
-      height: 289px;
-      background: url("@@/assets/img/aboutus-app.svg") no-repeat;
-      background-size: cover;
-      z-index: -1;
-      top: 160px;
+      width: 509px;
+      height: 339px;
+      background: url("@@/assets/img/aboutus-app.png") no-repeat;
+      top: 130px;
       left: -100px;
     }
   }
