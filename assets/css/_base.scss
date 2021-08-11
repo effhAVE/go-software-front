@@ -1,7 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $bgColor;
   font-family: "Lato", sans-serif;
   color: $primaryColor;
+  position: relative;
 }
 
 h1,
@@ -28,6 +33,10 @@ h4 {
   margin-bottom: 1em;
 }
 
+a {
+  color: $secondaryColor;
+}
+
 .card-title {
   color: $primaryColor;
 }
@@ -41,8 +50,27 @@ p {
 }
 
 .btn {
+  border-radius: 10px;
+  padding: 1em 2em;
   color: $primaryColor;
+  border: none;
   &:hover {
+    color: $primaryColor;
+  }
+}
+
+.btn-primary:not(:disabled):not(.disabled) {
+  &:focus,
+  &:active {
+    box-shadow: 0 0 0 0.2rem rgba($secondaryColor, 0.5);
+    background: $primaryColor;
+    color: white;
+  }
+
+  background: $primaryColor;
+  color: white;
+  &:hover {
+    background: $secondaryColor;
     color: $primaryColor;
   }
 }

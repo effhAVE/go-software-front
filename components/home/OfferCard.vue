@@ -28,6 +28,7 @@ export default {
   }
   .card {
     transition: transform 0.7s;
+    padding: 60px 40px;
     transform-style: preserve-3d;
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06),
       0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
@@ -36,6 +37,17 @@ export default {
     &-title,
     &-img-top {
       backface-visibility: hidden;
+    }
+
+    &-body {
+      padding: 0;
+    }
+
+    &-img-top {
+      max-height: 200px;
+      width: auto;
+      margin-bottom: 40px;
+      object-fit: contain;
     }
   }
 
@@ -46,11 +58,7 @@ export default {
     left: 50%;
     transform: rotateY(180deg) translate(50%, -50%);
     width: 100%;
-    padding: 5px;
+    padding: 30px;
   }
-}
-
-.card-item .card-img-top {
-  padding: 60px 40px;
 }
 </style>

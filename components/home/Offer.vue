@@ -17,15 +17,16 @@
         <b-row class="justify-content-around">
           <b-col cols="auto">
             <OfferCard
-              title="Aplikacje i strony internetowe"
+              :title="$t('offer.card1Title')"
+              :desc="$t('offer.card1Desc')"
               :img-src="require('@@/assets/img/offer-1.png')"
               img-alt=""
-              desc="Tworzymy aplikacje i strony internetowe spełniające potrzeby naszych klientów i użytkowników. Sklep, aplikacja lub serwis internetowy? Sprostamy Twoim oczekiwaniom. Lubimy walić wiadro i pisać teksty, które potem będą do zmiany bo tymczasowo są zwykłymi zapchaj kiszke."
             />
           </b-col>
           <b-col cols="auto" class="lowered-xl">
             <OfferCard
-              title="Blogi i landing page"
+              :title="$t('offer.card2Title')"
+              :desc="$t('offer.card2Desc')"
               :img-src="require('@@/assets/img/offer-2.png')"
               img-alt=""
             />
@@ -34,14 +35,16 @@
         <b-row class="justify-content-around">
           <b-col cols="auto">
             <OfferCard
-              title="Projekty graficzne stron i aplikacji"
+              :title="$t('offer.card3Title')"
+              :desc="$t('offer.card3Desc')"
               :img-src="require('@@/assets/img/offer-3.png')"
               img-alt=""
             />
           </b-col>
           <b-col cols="auto" class="lowered-xl">
             <OfferCard
-              title="Audyty stron i marketing"
+              :title="$t('offer.card4Title')"
+              :desc="$t('offer.card4Desc')"
               :img-src="require('@@/assets/img/offer-4.png')"
               img-alt=""
             />
@@ -62,6 +65,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.offer {
+  padding-top: 140px;
+  margin-top: -140px;
+}
+
 .offer-blob {
   z-index: 2;
   margin-top: -70px;

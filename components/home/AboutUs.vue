@@ -90,14 +90,6 @@
 
 .about-us {
   &-blob {
-    &::before {
-      width: 500px;
-      height: 500px;
-      background: url("@@/assets/img/aboutus-blob.svg") no-repeat;
-      top: -75px;
-      left: -130px;
-    }
-
     &::after {
       width: 509px;
       height: 339px;

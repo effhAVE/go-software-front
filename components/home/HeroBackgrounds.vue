@@ -43,8 +43,8 @@
 
 .sky-bg {
   position: absolute;
-  left: 220px;
-  top: 60%;
+  left: 230px;
+  top: 61%;
   z-index: -1;
 }
 

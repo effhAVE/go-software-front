@@ -1,7 +1,7 @@
 <template>
-  <section class="hero-main">
+  <section v-b-visible="visibleHandler" class="hero-main">
     <header>
-      <Navbar />
+      <Navbar :fixed="isNavbarFixed" />
     </header>
     <div class="hero-main-wrapper">
       <div class="hero-main-container">
@@ -26,5 +26,15 @@ import Navbar from "../common/Navbar/Navbar.vue"
 import Backgrounds from "./HeroBackgrounds.vue"
 export default {
   components: { Navbar, Backgrounds },
+  data() {
+    return {
+      isNavbarFixed: false,
+    }
+  },
+  methods: {
+    visibleHandler(isVisible) {
+      this.isNavbarFixed = !isVisible
+    },
+  },
 }
 </script>

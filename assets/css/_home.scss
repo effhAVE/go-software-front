@@ -19,7 +19,8 @@
   }
 
   &-intro {
-    padding-left: 10vw;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
   .title {
@@ -97,5 +98,22 @@
 .card-item {
   .card {
     background: $bgColor;
+  }
+}
+
+.blob-padding {
+  padding-top: 75px;
+}
+
+.about-us,
+.contact {
+  &-blob {
+    &::before {
+      width: 500px;
+      height: 500px;
+      background: url("@@/assets/img/aboutus-blob.svg") no-repeat;
+      top: -75px;
+      left: -130px;
+    }
   }
 }

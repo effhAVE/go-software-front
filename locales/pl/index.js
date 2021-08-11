@@ -43,5 +43,27 @@ export default {
     solutionsDesc: `Chcemy poznać Twój pomysł, problem lub cel, który chcesz osiagnąć.
             Następnie dobierzemy rozwiązania najlepiej odpowiadające Twoim
             wymaganiom.`,
+    card1Title: "Aplikacje i strony internetowe",
+    card1Desc:
+      "Tworzymy aplikacje i strony internetowe spełniające potrzeby naszych klientów i użytkowników. Sklep, aplikacja lub serwis internetowy? Sprostamy Twoim oczekiwaniom. Lubimy walić wiadro i pisać teksty, które potem będą do zmiany bo tymczasowo są zwykłymi zapchaj kiszke.",
+    card2Title: "Blogi i landing page",
+    card2Desc:
+      "Tworzymy aplikacje i strony internetowe spełniające potrzeby naszych klientów i użytkowników. Sklep, aplikacja lub serwis internetowy? Sprostamy Twoim oczekiwaniom. Lubimy walić wiadro i pisać teksty, które potem będą do zmiany bo tymczasowo są zwykłymi zapchaj kiszke.",
+    card3Title: "Projekty graficzne stron i aplikacji",
+    card3Desc:
+      "Tworzymy aplikacje i strony internetowe spełniające potrzeby naszych klientów i użytkowników. Sklep, aplikacja lub serwis internetowy? Sprostamy Twoim oczekiwaniom. Lubimy walić wiadro i pisać teksty, które potem będą do zmiany bo tymczasowo są zwykłymi zapchaj kiszke.",
+    card4Title: "Audyty stron i marketing",
+    card4Desc:
+      "Tworzymy aplikacje i strony internetowe spełniające potrzeby naszych klientów i użytkowników. Sklep, aplikacja lub serwis internetowy? Sprostamy Twoim oczekiwaniom. Lubimy walić wiadro i pisać teksty, które potem będą do zmiany bo tymczasowo są zwykłymi zapchaj kiszke.",
+  },
+
+  contact: {
+    title: "KONTAKT",
+    supertitle: "Współpracuj z nami!",
+    sectionTitle1: "Zainteresowany?",
+    sectionTitle2: "Skontaktuj się z nami",
+    sectionDesc:
+      "Wyślij nam wiadomość e-mail, a my odezwiemy się do Ciebie. Poznając Twoje potrzeby zaproponujemy Ci najlepsze rozwiązania.",
+    sendButton: "Wyślij wiadomość"
   },
 }
