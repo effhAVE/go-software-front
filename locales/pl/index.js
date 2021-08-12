@@ -1,4 +1,7 @@
 export default {
+  meta: {
+    title: "GO Software - Najlepsze rozwiązania IT dla Twojego biznesu",
+  },
   mainHero: {
     title1: `Z nami osiągniesz`,
     title2: `swój cel`,
@@ -64,6 +67,6 @@ export default {
     sectionTitle2: "Skontaktuj się z nami",
     sectionDesc:
       "Wyślij nam wiadomość e-mail, a my odezwiemy się do Ciebie. Poznając Twoje potrzeby zaproponujemy Ci najlepsze rozwiązania.",
-    sendButton: "Wyślij wiadomość"
+    sendButton: "Wyślij wiadomość",
   },
-}
+};

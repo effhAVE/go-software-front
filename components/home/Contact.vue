@@ -18,14 +18,44 @@
             {{ $t("contact.sendButton") }}
           </b-btn>
           <b-row>
-            <b-col>contact@go-software.dev</b-col>
-            <b-col>+48 XXX XXX XXX</b-col>
+            <b-col cols="auto">
+              <p class="contact-email">contact@go-software.dev</p>
+            </b-col>
+            <b-col cols="auto">
+              <p class="contact-tel d-inline-block">+48 {{ phoneNumber }}</p>
+              <b-btn
+                variant="outline-primary"
+                class="contact-tel-button"
+                :class="isPhoneVisible ? 'd-none' : ''"
+                :disabled="isPhoneVisible"
+                @click="showPhoneNumber"
+              >
+                Pokaż numer
+              </b-btn>
+            </b-col>
           </b-row>
         </b-col>
       </b-row>
     </b-container>
   </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isPhoneVisible: false,
+      phoneNumber: "XXX XXX XXX",
+    };
+  },
+  methods: {
+    showPhoneNumber() {
+      this.isPhoneVisible = true;
+      this.phoneNumber = "573 125 424";
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .contact {
@@ -41,6 +71,43 @@
 
   &-btn {
     margin: 85px 0;
+  }
+
+  &-email {
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      background: url("@@/assets/img/contact-mails.png");
+      width: 58px;
+      height: 65px;
+    }
+  }
+
+  &-tel {
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      background: url("@@/assets/img/contact-phone.png") no-repeat center;
+      width: 54px;
+      height: 65px;
+      margin-right: 10px;
+    }
+
+    &-button {
+      text-decoration: underline;
+      color: #8ba0b2;
+      padding: 1em;
+      margin: 0 10px;
+      &:not(:disabled) {
+        &:hover,
+        &:focus,
+        &:active {
+          background: none;
+        }
+      }
+    }
   }
 }
 </style>
