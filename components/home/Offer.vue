@@ -56,12 +56,12 @@
 </template>
 
 <script>
-import OfferCard from "./OfferCard.vue"
+import OfferCard from "./OfferCard.vue";
 export default {
   components: {
     OfferCard,
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -92,6 +92,6 @@ export default {
 }
 
 .solutions-list {
-  margin-top: 140px;
+  margin-top: -70px;
 }
 </style>

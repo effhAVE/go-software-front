@@ -1,6 +1,6 @@
 <template>
   <b-navbar toggleable="lg" :class="fixed && 'is-fixed'">
-    <b-navbar-brand href="#">
+    <b-navbar-brand to="/">
       <GOLogo />
     </b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>

@@ -79,6 +79,7 @@
 
 .has-blob {
   position: relative;
+  min-height: 500px;
   &::before {
     content: "";
     position: absolute;
@@ -93,6 +94,14 @@
     background-size: cover;
     z-index: -1;
   }
+
+  &.blob-primary::before {
+    width: 500px;
+    height: 500px;
+    background: url("@@/assets/img/aboutus-blob.svg") no-repeat;
+    top: -75px;
+    left: -130px;
+  }
 }
 
 .card-item {
@@ -103,17 +112,4 @@
 
 .blob-padding {
   padding-top: 75px;
-}
-
-.about-us,
-.contact {
-  &-blob {
-    &::before {
-      width: 500px;
-      height: 500px;
-      background: url("@@/assets/img/aboutus-blob.svg") no-repeat;
-      top: -75px;
-      left: -130px;
-    }
-  }
 }

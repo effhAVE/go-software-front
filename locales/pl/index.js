@@ -69,4 +69,17 @@ export default {
       "Wyślij nam wiadomość e-mail, a my odezwiemy się do Ciebie. Poznając Twoje potrzeby zaproponujemy Ci najlepsze rozwiązania.",
     sendButton: "Wyślij wiadomość",
   },
+
+  cookies: {
+    title: "COOKIES",
+    supertitle: "Co to są te ciasteczka?",
+    sectionTitle1: "Informacje o stosowanych plikach cookies na stronie",
+    sectionParagraph1:
+      "Zależy nam, aby trafiać do jak najszerszej grupy odbiorców naszej witryny. Dlatego gromadzimy dane analityczne użytkowników odwiedzających naszą stronę, aby jeszcze lepiej dostosować naszą ofertę do potrzeb klientów.",
+    point01: `Pliki cookies to niewielkie informacje tekstowe, wysyłane przez serwer www i zapisywane na komputerze Użytkownika (bądź innym urządzeniu, z którego korzysta). Serwis wykorzystuje pliki cookies w celu rozpoznawania osobistych preferencji Użytkownika. Innymi słowy stosowane przez Serwis pliki cookies pozwalają na rozpoznanie komputera Użytkownika w czasie kolejnej wizyty w Serwisie i mają jedynie ułatwiać korzystanie z Serwisu.`,
+    point02: `Serwis wykorzystuje oraz umożliwia korzystanie z plików cookies podmiotom trzecim (Google AdWords, GoogleAnalytics) w celach statystycznych oraz reklamowych.`,
+    point03: `To Użytkownik decyduje, czy chce, aby pliki cookies były zapisywane na jego komputerze. Może dezaktywować lub całkowicie wyłączyć pliki cookies w opcjach swojej przeglądarki internetowej lub wybierając odpowiednią opcję w programach typu Firewall. Może również usunąć zapisane do tej pory pliki cookies.`,
+    point04: `Użytkownik może zablokować usługę Analytics dla reklam displayowych oraz dostosowywać reklamy w sieci reklamowej Google w Menedżerze preferencji reklam.`,
+    point05: `Wyłączenie plików cookies może jednak spowodować, niedogodności w korzystaniu z naszego serwisu. `,
+  },
 };
