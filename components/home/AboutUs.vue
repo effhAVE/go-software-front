@@ -38,8 +38,18 @@
             <p>{{ $t("aboutUs.processSubtitle") }}</p>
           </b-col>
         </b-row>
-        <b-row class="justify-content-between list-unstyled" tag="ul">
-          <b-col cols="5" tag="li">
+        <VueSlick v-bind="slickSettings" class="row justify-content-between">
+          <template #prevArrow>
+            <div class="custom-arrow">
+              <b-icon-arrow-left />
+            </div>
+          </template>
+          <template #nextArrow>
+            <div class="custom-arrow">
+              <b-icon-arrow-right />
+            </div>
+          </template>
+          <b-col cols="12" lg="5">
             <div class="process-item">
               <img src="@@/assets/img/discovery.png" alt="" />
               <h4>{{ $t("aboutUs.process1Name") }}</h4>
@@ -48,7 +58,7 @@
               </p>
             </div>
           </b-col>
-          <b-col cols="5" class="lowered-xl" tag="li">
+          <b-col cols="12" lg="5" class="lowered-xl">
             <div class="process-item">
               <img src="@@/assets/img/design.png" alt="" />
               <h4>{{ $t("aboutUs.process2Name") }}</h4>
@@ -58,7 +68,7 @@
             </div>
           </b-col>
 
-          <b-col cols="6" tag="li">
+          <b-col cols="12" lg="5">
             <div class="process-item">
               <img src="@@/assets/img/creation.png" alt="" class="m-0" />
               <h4>{{ $t("aboutUs.process3Name") }}</h4>
@@ -67,7 +77,7 @@
               </p>
             </div>
           </b-col>
-          <b-col cols="5" class="lowered-xl" tag="li">
+          <b-col cols="12" lg="5" class="lowered-xl">
             <div class="process-item">
               <img src="@@/assets/img/implementation.png" alt="" />
               <h4>{{ $t("aboutUs.process4Name") }}</h4>
@@ -76,11 +86,45 @@
               </p>
             </div>
           </b-col>
-        </b-row>
+        </VueSlick>
       </b-container>
     </div>
   </section>
 </template>
+
+<script>
+import VueSlick from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+export default {
+  components: {
+    VueSlick,
+  },
+
+  data() {
+    return {
+      slickSettings: {
+        arrows: true,
+        dots: true,
+        slidesToShow: 1,
+        mobileFirst: true,
+        infinite: false,
+        responsive: [
+          {
+            breakpoint: 9999,
+            settings: "unslick",
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      },
+    };
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 @import "@/assets/css/_variables.scss";
@@ -168,6 +212,27 @@
         left: 0;
         top: 120px;
       }
+    }
+
+    &-process {
+      padding: 60px 0;
+      margin: 150px 0;
+      &::before,
+      &::after {
+        height: 150px;
+      }
+
+      .lowered-xl {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .process-item {
+    padding: 20px 0;
+    img {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

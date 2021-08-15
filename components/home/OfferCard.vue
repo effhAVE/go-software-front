@@ -12,15 +12,17 @@
 <script>
 export default {
   props: ["title", "img-src", "img-alt", "desc"],
-}
+};
 </script>
 
 <style lang="scss">
+@import "@/assets/css/_variables.scss";
 .card-item {
   text-align: center;
   min-height: 390px;
   width: 355px;
   perspective: 800px;
+  margin: 0 auto;
   &:hover {
     .card {
       transform: rotateY(180deg);
@@ -44,7 +46,7 @@ export default {
     }
 
     &-img-top {
-      max-height: 200px;
+      height: 150px;
       width: auto;
       margin-bottom: 40px;
       object-fit: contain;
@@ -59,6 +61,12 @@ export default {
     transform: rotateY(180deg) translate(50%, -50%);
     width: 100%;
     padding: 30px;
+  }
+}
+
+@include sm-max {
+  .card-item {
+    width: 100%;
   }
 }
 </style>

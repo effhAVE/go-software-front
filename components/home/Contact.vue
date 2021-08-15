@@ -2,7 +2,7 @@
   <section class="section contact">
     <b-container>
       <b-row class="blob-padding">
-        <b-col cols="5" class="has-blob contact-blob blob-primary">
+        <b-col cols="12" lg="5" class="has-blob contact-blob blob-primary">
           <p class="supertitle">{{ $t("contact.supertitle") }}</p>
           <h2 class="title section-title">{{ $t("contact.title") }}</h2>
         </b-col>
@@ -18,10 +18,10 @@
             {{ $t("contact.sendButton") }}
           </b-btn>
           <b-row>
-            <b-col cols="auto">
+            <b-col cols="12" md="auto">
               <p class="contact-email">contact@go-software.dev</p>
             </b-col>
-            <b-col cols="auto">
+            <b-col cols="12" md="auto">
               <p class="contact-tel d-inline-block">+48 {{ phoneNumber }}</p>
               <b-btn
                 variant="outline-primary"
@@ -58,6 +58,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/css/_variables.scss";
+
 .contact {
   &-blob {
     &::after {
@@ -81,6 +83,7 @@ export default {
       background: url("@@/assets/img/contact-mails.png");
       width: 58px;
       height: 65px;
+      margin-right: 10px;
     }
   }
 
@@ -107,6 +110,35 @@ export default {
           background: none;
         }
       }
+    }
+  }
+}
+
+@include lg-max {
+  .contact {
+    &-blob {
+      &::after {
+        width: 250px;
+        background-size: contain;
+        left: 50px;
+        top: 150px;
+      }
+    }
+
+    .lowered {
+      margin-top: 0;
+    }
+
+    &-btn {
+      margin: 75px 0;
+    }
+  }
+}
+
+@include sm-max {
+  .contact {
+    &-btn {
+      width: 100%;
     }
   }
 }

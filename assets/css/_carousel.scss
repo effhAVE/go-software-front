@@ -1,0 +1,50 @@
+@import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+
+.slick-dots {
+  z-index: 2;
+  li {
+    margin: 0;
+    &.slick-active {
+      button {
+        &::before {
+          color: $secondaryColor;
+          opacity: 1;
+        }
+      }
+    }
+
+    button {
+      &::before {
+        font-size: 8px;
+        opacity: 1;
+        color: $accentColor;
+      }
+    }
+  }
+}
+
+.slick-prev,
+.slick-next {
+  &.slick-disabled {
+    display: none;
+  }
+
+  background: #272245;
+  border-radius: 50%;
+  padding: 5px;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include smooth;
+  svg {
+    height: 16px;
+    width: 16px;
+    color: $secondaryColor;
+  }
+
+  &::before {
+    content: "";
+  }
+}

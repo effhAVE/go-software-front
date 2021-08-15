@@ -1,10 +1,12 @@
 <template>
   <footer class="footer">
-    <div class="footer-inner">
+    <b-container class="footer-inner">
       <b-row no-gutters>
-        <b-col cols="auto" class="mr-5"><GOLogo white /></b-col>
+        <b-col cols="12" md="auto" class="mr-5 mb-sm-0 mb-5">
+          <GOLogo white />
+        </b-col>
         <b-col>
-          <p>
+          <p class="mb-sm-0 mb-5">
             Na naszej stronie stosujemy pliki cookies. Korzystanie ze strony bez
             zmiany ustawień przeglądarki oznacza, że pliki cookies będą
             zamieszczane w Twoim urządzeniu.
@@ -14,17 +16,17 @@
           <p>Wszystkie prawa zastrzeżone. GO Software © 2021</p>
         </b-col>
       </b-row>
-    </div>
+    </b-container>
   </footer>
 </template>
 
 <script>
-import GOLogo from "../GOLogo.vue"
+import GOLogo from "../GOLogo.vue";
 export default {
   components: {
     GOLogo,
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -34,9 +36,9 @@ export default {
   display: flex;
   align-items: center;
   color: white;
+  padding: 50px 0;
   &-inner {
     flex: 1 1 auto;
-    max-width: 1400px;
     margin: 0 auto;
   }
 
