@@ -2,7 +2,7 @@
   <section class="section about-us">
     <b-container>
       <b-row class="blob-padding">
-        <b-col cols="5" class="has-blob about-us-blob blob-primary">
+        <b-col cols="12" lg="5" class="has-blob about-us-blob blob-primary">
           <p class="supertitle">{{ $t("aboutUs.supertitle") }}</p>
           <h2 class="title section-title">{{ $t("aboutUs.title") }}</h2>
         </b-col>
@@ -14,18 +14,18 @@
           <img
             src="@@/assets/img/aboutus-rocket.svg"
             alt=""
-            class="rocket-img"
+            class="rocket-img d-none d-md-block"
           />
         </b-col>
       </b-row>
       <b-row class="py-5">
-        <b-col cols="6" class="lowered">
+        <b-col cols="12" md="6" class="lowered">
           <h3>{{ $t("aboutUs.sectionTitle2") }}</h3>
           <p>
             {{ $t("aboutUs.sectionParagraph2") }}
           </p>
         </b-col>
-        <b-col cols="6" class="about-us-ideas">
+        <b-col cols="6" class="about-us-ideas d-none d-md-block">
           <img src="@@/assets/img/aboutus-ideas.png" alt="" />
         </b-col>
       </b-row>
@@ -38,8 +38,8 @@
             <p>{{ $t("aboutUs.processSubtitle") }}</p>
           </b-col>
         </b-row>
-        <b-row class="justify-content-between">
-          <b-col cols="5">
+        <b-row class="justify-content-between list-unstyled" tag="ul">
+          <b-col cols="5" tag="li">
             <div class="process-item">
               <img src="@@/assets/img/discovery.png" alt="" />
               <h4>{{ $t("aboutUs.process1Name") }}</h4>
@@ -48,7 +48,7 @@
               </p>
             </div>
           </b-col>
-          <b-col cols="5" class="lowered-xl">
+          <b-col cols="5" class="lowered-xl" tag="li">
             <div class="process-item">
               <img src="@@/assets/img/design.png" alt="" />
               <h4>{{ $t("aboutUs.process2Name") }}</h4>
@@ -57,9 +57,8 @@
               </p>
             </div>
           </b-col>
-        </b-row>
-        <b-row class="justify-content-between">
-          <b-col cols="6">
+
+          <b-col cols="6" tag="li">
             <div class="process-item">
               <img src="@@/assets/img/creation.png" alt="" class="m-0" />
               <h4>{{ $t("aboutUs.process3Name") }}</h4>
@@ -68,7 +67,7 @@
               </p>
             </div>
           </b-col>
-          <b-col cols="5" class="lowered-xl">
+          <b-col cols="5" class="lowered-xl" tag="li">
             <div class="process-item">
               <img src="@@/assets/img/implementation.png" alt="" />
               <h4>{{ $t("aboutUs.process4Name") }}</h4>
@@ -84,6 +83,8 @@
 </template>
 
 <style lang="scss" scoped>
+@import "@/assets/css/_variables.scss";
+
 .blob-padding {
   padding-top: 75px;
 }
@@ -131,10 +132,12 @@
 
     &::before {
       transform: translateY(-100%);
+      top: 0;
     }
 
     &::after {
-      transform: rotate(180deg);
+      transform: translateY(100%) rotate(180deg);
+      bottom: 0;
     }
 
     &-title {
@@ -153,6 +156,35 @@
   text-align: center;
   & > img {
     margin-bottom: 40px;
+  }
+}
+
+@include lg-max {
+  .about-us {
+    &-blob {
+      &::after {
+        width: 350px;
+        background-size: contain;
+        left: 0;
+        top: 120px;
+      }
+    }
+  }
+}
+
+@include md-max {
+  .about-us {
+    &-process {
+      margin: 100px 0;
+      &::before,
+      &::after {
+        height: 100px;
+      }
+
+      &-title {
+        top: 0;
+      }
+    }
   }
 }
 </style>

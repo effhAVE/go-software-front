@@ -4,6 +4,15 @@ $secondaryColor: #ffcb14;
 $accentColor: #8ba0b2;
 $titleColor: #100070;
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
 @mixin fontMontserrat {
   font-family: "Montserrat", sans-serif;
   color: $titleColor;
@@ -12,4 +21,64 @@ $titleColor: #100070;
 
 @mixin smooth {
   transition: all 0.3s;
+}
+
+@mixin sm {
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: map-get($grid-breakpoints, xl)) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: map-get($grid-breakpoints, xxl)) {
+    @content;
+  }
+}
+
+@mixin sm-max {
+  @media (max-width: map-get($grid-breakpoints, sm)) {
+    @content;
+  }
+}
+
+@mixin md-max {
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    @content;
+  }
+}
+
+@mixin lg-max {
+  @media (max-width: map-get($grid-breakpoints, lg)) {
+    @content;
+  }
+}
+
+@mixin xl-max {
+  @media (max-width: map-get($grid-breakpoints, xl)) {
+    @content;
+  }
+}
+
+@mixin xxl-max {
+  @media (max-width: map-get($grid-breakpoints, xxl)) {
+    @content;
+  }
 }

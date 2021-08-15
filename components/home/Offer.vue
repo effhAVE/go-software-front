@@ -68,10 +68,11 @@ export default {
 .offer {
   padding-top: 140px;
   margin-top: -140px;
+  position: relative;
+  z-index: 2;
 }
 
 .offer-blob {
-  z-index: 2;
   margin-top: -70px;
   &::before {
     width: 592px;

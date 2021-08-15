@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -96,4 +98,19 @@ p {
 
 .has-navbar-fixed {
   padding-top: 75px;
+}
+
+@include lg-max {
+  h3 {
+    font-size: 1.5em;
+  }
+}
+
+@include md-max {
+  .lowered {
+    margin-top: 30px;
+    &-xl {
+      margin-top: 70px;
+    }
+  }
 }
