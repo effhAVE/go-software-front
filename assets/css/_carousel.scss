@@ -48,3 +48,10 @@
     content: "";
   }
 }
+
+.about-us-process {
+  .slick-track {
+    display: flex !important;
+    align-items: center;
+  }
+}

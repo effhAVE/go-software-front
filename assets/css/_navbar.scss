@@ -7,6 +7,12 @@
     min-width: 475px;
     width: 40%;
     justify-content: space-between;
+    .show {
+      & > .nav-link {
+        color: $secondaryColor;
+      }
+    }
+
     .nav-link {
       color: $primaryColor;
       @include fontMontserrat;

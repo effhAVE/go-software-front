@@ -53,6 +53,13 @@ export default {
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     "@nuxtjs/i18n",
+    [
+      "@netsells/nuxt-hotjar",
+      {
+        id: "2555640",
+        sv: "6",
+      },
+    ],
   ],
 
   bootstrapVue: {

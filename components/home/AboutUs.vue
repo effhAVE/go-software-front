@@ -70,7 +70,7 @@
 
           <b-col cols="12" lg="5">
             <div class="process-item">
-              <img src="@@/assets/img/creation.png" alt="" class="m-0" />
+              <img src="@@/assets/img/creation.png" alt="" class="mb-0" />
               <h4>{{ $t("aboutUs.process3Name") }}</h4>
               <p>
                 {{ $t("aboutUs.process3Desc") }}
@@ -249,6 +249,15 @@ export default {
       &-title {
         top: 0;
       }
+    }
+  }
+
+  .process-item {
+    & > img {
+      max-width: 250px;
+      max-height: 250px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

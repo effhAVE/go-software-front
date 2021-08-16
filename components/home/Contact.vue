@@ -14,9 +14,11 @@
           <p>
             {{ $t("contact.sectionDesc") }}
           </p>
-          <b-btn variant="primary" class="contact-btn">
-            {{ $t("contact.sendButton") }}
-          </b-btn>
+          <a href="mailto:contact@go-software.dev" target="_blank">
+            <b-btn variant="primary" class="contact-btn">
+              {{ $t("contact.sendButton") }}
+            </b-btn>
+          </a>
           <b-row>
             <b-col cols="12" md="auto">
               <p class="contact-email">contact@go-software.dev</p>
@@ -30,7 +32,7 @@
                 :disabled="isPhoneVisible"
                 @click="showPhoneNumber"
               >
-                Pokaż numer
+                {{ $t("contact.showNumber") }}
               </b-btn>
             </b-col>
           </b-row>
@@ -139,6 +141,11 @@ export default {
   .contact {
     &-btn {
       width: 100%;
+    }
+
+    &-tel-button {
+      padding: 0.7em;
+      margin: 0;
     }
   }
 }

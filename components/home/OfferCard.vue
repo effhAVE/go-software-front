@@ -1,11 +1,15 @@
 <template>
   <div class="card-item">
-    <b-card v-bind="$props" img-top>
+    <div class="card">
+      <div class="card-body">
+        <img :src="imgSrc" :alt="imgAlt" class="card-img-top" />
+        <h4 class="card-title">{{ title }}</h4>
+      </div>
       <div class="card-back">
         <h4 class="card-title">{{ title }}</h4>
-        <p>{{ desc }}</p>
+        <p class="mb-0">{{ desc }}</p>
       </div>
-    </b-card>
+    </div>
   </div>
 </template>
 
@@ -36,13 +40,11 @@ export default {
       0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
     border-radius: 20px;
     border: none;
-    &-title,
-    &-img-top {
-      backface-visibility: hidden;
-    }
 
     &-body {
       padding: 0;
+      backface-visibility: hidden;
+      transform: translateX(0);
     }
 
     &-img-top {
@@ -51,16 +53,21 @@ export default {
       margin-bottom: 40px;
       object-fit: contain;
     }
-  }
 
-  .card-back {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: rotateY(180deg) translate(50%, -50%);
-    width: 100%;
-    padding: 30px;
+    &-back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotateY(180deg) translateX(0);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+    }
   }
 }
 

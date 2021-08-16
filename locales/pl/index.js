@@ -68,6 +68,7 @@ export default {
     sectionDesc:
       "Wyślij nam wiadomość e-mail, a my odezwiemy się do Ciebie. Poznając Twoje potrzeby zaproponujemy Ci najlepsze rozwiązania.",
     sendButton: "Wyślij wiadomość",
+    showNumber: "Pokaż numer",
   },
 
   cookies: {
