@@ -85,6 +85,7 @@ export default {
         slidesToShow: 1,
         mobileFirst: true,
         infinite: false,
+        lazyLoad: "ondemand",
         responsive: [
           {
             breakpoint: 9999,

@@ -110,6 +110,13 @@
   z-index: 3;
 }
 
+@media (max-width: 1600px) {
+  .lighthouse-bg {
+    right: 25px;
+    bottom: 78px;
+  }
+}
+
 @include xxl-max {
   .boat-bg {
     left: 20px;
@@ -132,7 +139,7 @@
   }
 
   .lighthouse-bg {
-    right: -35px;
+    right: -25px;
   }
 
   .birds-bg {

@@ -1,6 +1,6 @@
 <template>
   <section v-b-visible="visibleHandler" class="hero-main">
-      <Navbar :fixed="isNavbarFixed" />
+    <Navbar :fixed="isNavbarFixed" />
     <div class="hero-main-wrapper">
       <div class="hero-main-container">
         <div class="hero-main-intro">
@@ -74,14 +74,19 @@ export default {
   }
 }
 
-@include xxl-max {
+@media (max-width: 1600px) {
   .hero-main {
+    &-container {
+      margin-top: 10vh;
+      min-height: 500px;
+    }
+
     .title {
-      font-size: 3em;
+      font-size: 2.5em;
     }
 
     .supertitle {
-      font-size: 1.25em;
+      font-size: 1.1em;
     }
   }
 }
