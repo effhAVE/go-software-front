@@ -18,7 +18,11 @@
         </b-col>
       </b-row>
       <div class="solutions-list">
-        <VueSlick v-bind="slickSettings" class="row justify-content-between">
+        <component
+          :is="windowWidth <= 992 ? require('vue-slick-carousel') : 'div'"
+          v-bind="slickSettings"
+          class="row justify-content-between"
+        >
           <template #prevArrow>
             <div class="custom-arrow">
               <b-icon-arrow-left />
@@ -61,20 +65,25 @@
               img-alt=""
             />
           </b-col>
-        </VueSlick>
+        </component>
       </div>
     </b-container>
   </section>
 </template>
 
 <script>
-import VueSlick from "vue-slick-carousel";
 import OfferCard from "./OfferCard.vue";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 export default {
   components: {
-    VueSlick,
     OfferCard,
+  },
+
+  props: {
+    windowWidth: {
+      type: Number,
+      default: 999,
+    },
   },
 
   data() {
@@ -86,18 +95,6 @@ export default {
         mobileFirst: true,
         infinite: false,
         lazyLoad: "ondemand",
-        responsive: [
-          {
-            breakpoint: 9999,
-            settings: "unslick",
-          },
-          {
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 1,
-            },
-          },
-        ],
       },
     };
   },

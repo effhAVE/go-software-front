@@ -38,7 +38,11 @@
             <p>{{ $t("aboutUs.processSubtitle") }}</p>
           </b-col>
         </b-row>
-        <VueSlick v-bind="slickSettings" class="row justify-content-between">
+        <component
+          :is="windowWidth <= 992 ? require('vue-slick-carousel') : 'div'"
+          v-bind="slickSettings"
+          class="row justify-content-between"
+        >
           <template #prevArrow>
             <div class="custom-arrow">
               <b-icon-arrow-left />
@@ -86,20 +90,21 @@
               </p>
             </div>
           </b-col>
-        </VueSlick>
+        </component>
       </b-container>
     </div>
   </section>
 </template>
 
 <script>
-import VueSlick from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 export default {
-  components: {
-    VueSlick,
+  props: {
+    windowWidth: {
+      type: Number,
+      default: null
+    }
   },
-
   data() {
     return {
       slickSettings: {
@@ -109,18 +114,6 @@ export default {
         mobileFirst: true,
         infinite: false,
         lazyLoad: "ondemand",
-        responsive: [
-          {
-            breakpoint: 9999,
-            settings: "unslick",
-          },
-          {
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 1,
-            },
-          },
-        ],
       },
     };
   },
