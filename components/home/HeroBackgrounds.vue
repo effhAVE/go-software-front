@@ -1,7 +1,7 @@
 <template>
   <div class="scene">
     <div class="hero-main-intro">
-      <b-button variant="transparent" class="intro-btn" to="/#about-us">
+      <b-button variant="transparent" class="intro-btn" @click="scrollBelow">
         <span class="d-none d-lg-block">
           {{ $t("mainHero.beginButton") }}
           <span class="btn-arrow"><b-icon-arrow-right /></span>
@@ -16,6 +16,19 @@
     <img src="@@/assets/img/birds.svg" class="birds-bg" alt="" />
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    scrollBelow() {
+      window.scrollTo({
+        top: document.querySelector("#about-us").offsetTop,
+        behavior: "smooth",
+      });
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 @import "@/assets/css/_variables.scss";
