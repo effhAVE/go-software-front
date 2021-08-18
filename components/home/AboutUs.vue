@@ -102,8 +102,8 @@ export default {
   props: {
     windowWidth: {
       type: Number,
-      default: null
-    }
+      default: 99999,
+    },
   },
   data() {
     return {
