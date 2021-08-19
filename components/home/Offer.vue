@@ -21,7 +21,7 @@
         <component
           :is="windowWidth <= 992 ? require('vue-slick-carousel') : 'div'"
           v-bind="slickSettings"
-          class="row justify-content-between"
+          class="row justify-content-around"
         >
           <template #prevArrow>
             <div class="custom-arrow">
