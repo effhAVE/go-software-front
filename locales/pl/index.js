@@ -6,7 +6,7 @@ export default {
     start: "Start",
     aboutus: "O nas",
     offer: "Oferta",
-    contact: "Kontakt"
+    contact: "Kontakt",
   },
   mainHero: {
     title1: `Z nami osiągniesz`,
@@ -64,6 +64,11 @@ export default {
     card4Title: "Audyty stron i marketing",
     card4Desc:
       "Tworzymy aplikacje i strony internetowe spełniające potrzeby naszych klientów i użytkowników. Sklep, aplikacja lub serwis internetowy? Sprostamy Twoim oczekiwaniom. Lubimy walić wiadro i pisać teksty, które potem będą do zmiany bo tymczasowo są zwykłymi zapchaj kiszke.",
+  },
+
+  owners: {
+    title: "Kto za tym stoi?",
+    desc: "Chcemy poznać Twój pomysł, problem lub cel, który chcesz osiagnąć. Następnie dobierzemy rozwiązania najlepiej odpowiadające Twoim wymaganiom.",
   },
 
   contact: {

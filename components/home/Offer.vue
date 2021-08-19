@@ -67,6 +67,41 @@
           </b-col>
         </component>
       </div>
+
+      <b-row class="about-owners">
+        <b-col cols="12" lg="6">
+          <h3>{{ $t("owners.title") }}</h3>
+          <p>{{ $t("owners.desc") }}</p>
+        </b-col>
+        <b-col cols="12" class="about-owners-wrapper">
+          <div class="about-owners-list">
+            <div class="about-owners-list-item">
+              <b-img src="@@/assets/img/greg.png" />
+              <div class="about-owners-list-item-desc">
+                <h4>Grzegorz Kowalczyk</h4>
+                <p>Owner / Developer</p>
+                <p>
+                  Chcemy poznać Twój pomysł, problem lub cel, który chcesz
+                  osiagnąć. Następnie dobierzemy rozwiązania najlepiej
+                  odpowiadające Twoim wymaganiom.
+                </p>
+              </div>
+            </div>
+            <div class="about-owners-list-item">
+              <b-img src="@@/assets/img/oscar.png" />
+              <div class="about-owners-list-item-desc">
+                <h4>Grzegorz Kowalczyk</h4>
+                <p class="team-role">Owner / Developer</p>
+                <p>
+                  Chcemy poznać Twój pomysł, problem lub cel, który chcesz
+                  osiagnąć. Następnie dobierzemy rozwiązania najlepiej
+                  odpowiadające Twoim wymaganiom.
+                </p>
+              </div>
+            </div>
+          </div>
+        </b-col>
+      </b-row>
     </b-container>
   </section>
 </template>
@@ -144,6 +179,27 @@ export default {
     background-color: $secondaryColor;
     svg {
       color: $primaryColor;
+    }
+  }
+}
+
+.about-owners {
+  &-wrapper {
+    margin-top: 100px;
+  }
+
+  margin: 150px 0;
+  &-list {
+    display: flex;
+    justify-content: space-around;
+
+    &-item {
+      position: relative;
+
+      &-desc {
+        position: absolute;
+        visibility: hidden;
+      }
     }
   }
 }
