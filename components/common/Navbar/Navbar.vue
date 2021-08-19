@@ -14,31 +14,31 @@
         <b-navbar-nav v-b-scrollspy="0" class="ml-lg-auto">
           <nuxt-link
             class="nav-link"
-            :to="{ path: '/' }"
+            :to="localePath({ path: '/' })"
             @click.native="scrollToSection('#intro', $event)"
           >
-            Start
+            {{ $t("navbar.start") }}
           </nuxt-link>
           <nuxt-link
             class="nav-link"
-            :to="{ path: '/', hash: 'about-us' }"
+            :to="localePath({ path: '/', hash: 'about-us' })"
             @click.native="scrollToSection('#about-us', $event)"
           >
-            O nas
+            {{ $t("navbar.aboutus") }}
           </nuxt-link>
           <nuxt-link
             class="nav-link"
-            :to="{ path: '/', hash: 'offer' }"
+            :to="localePath({ path: '/', hash: 'offer' })"
             @click.native="scrollToSection('#offer', $event)"
           >
-            Oferta
+            {{ $t("navbar.offer") }}
           </nuxt-link>
           <nuxt-link
             class="nav-link"
-            :to="{ path: '/', hash: 'contact' }"
+            :to="localePath({ path: '/', hash: 'contact' })"
             @click.native="scrollToSection('#contact', $event)"
           >
-            Kontakt
+            {{ $t("navbar.contact") }}
           </nuxt-link>
           <b-nav-item-dropdown :text="`${$i18n.locale}`" right>
             <b-dropdown-item

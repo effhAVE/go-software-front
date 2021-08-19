@@ -2,6 +2,12 @@ export default {
   meta: {
     title: "GO Software - Najlepsze rozwiązania IT dla Twojego biznesu",
   },
+  navbar: {
+    start: "Start",
+    aboutus: "O nas",
+    offer: "Oferta",
+    contact: "Kontakt"
+  },
   mainHero: {
     title1: `Z nami osiągniesz`,
     title2: `swój cel`,

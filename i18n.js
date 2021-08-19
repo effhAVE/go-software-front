@@ -1,10 +1,13 @@
-import messages from "./locales"
+import messages from "./locales";
 
 export default {
-  locales: ["en", "pl"],
+  locales: [
+    { code: "en", iso: "en" },
+    { code: "pl", iso: "pl" },
+  ],
   defaultLocale: "pl",
   vueI18n: {
     fallbackLocale: "pl",
     messages,
   },
-}
+};

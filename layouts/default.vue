@@ -12,11 +12,13 @@ export default {
     Footer,
   },
   head() {
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
     return {
       title: this.$t("meta.title"),
       htmlAttrs: {
-        lang: this.$i18n.locale,
+        ...i18nHead.htmlAttrs,
       },
+      meta: [...i18nHead.meta],
     };
   },
 };
