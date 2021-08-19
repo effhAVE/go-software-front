@@ -43,6 +43,7 @@ export default {
 }
 
 .intro-btn {
+  color: $titleColor;
   position: relative;
   padding-left: 30px;
   padding-top: 30px;
@@ -51,14 +52,15 @@ export default {
   bottom: 300px;
   z-index: 2;
   &:hover {
-    & > .btn-arrow {
+    .btn-arrow {
       transform: translateX(10px);
     }
   }
 
-  & > .btn-arrow {
+  .btn-arrow {
     display: inline-block;
     margin-left: 5px;
+    vertical-align: middle;
     @include smooth;
   }
 
