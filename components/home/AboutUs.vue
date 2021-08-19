@@ -45,12 +45,12 @@
         >
           <template #prevArrow>
             <div class="custom-arrow">
-              <b-icon-arrow-left />
+              <BIconArrowLeft />
             </div>
           </template>
           <template #nextArrow>
             <div class="custom-arrow">
-              <b-icon-arrow-right />
+              <BIconArrowRight />
             </div>
           </template>
           <b-col cols="12" lg="5">
@@ -98,7 +98,12 @@
 
 <script>
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import { BIconArrowLeft, BIconArrowRight } from "bootstrap-vue";
 export default {
+  components: {
+    BIconArrowLeft,
+    BIconArrowRight
+  },
   props: {
     windowWidth: {
       type: Number,

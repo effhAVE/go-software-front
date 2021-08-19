@@ -25,12 +25,12 @@
         >
           <template #prevArrow>
             <div class="custom-arrow">
-              <b-icon-arrow-left />
+              <BIconArrowLeft />
             </div>
           </template>
           <template #nextArrow>
             <div class="custom-arrow">
-              <b-icon-arrow-right />
+              <BIconArrowRight />
             </div>
           </template>
           <b-col cols="auto" class="solution-item">
@@ -72,11 +72,14 @@
 </template>
 
 <script>
+import { BIconArrowLeft, BIconArrowRight } from "bootstrap-vue";
 import OfferCard from "./OfferCard.vue";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 export default {
   components: {
     OfferCard,
+    BIconArrowLeft,
+    BIconArrowRight,
   },
 
   props: {

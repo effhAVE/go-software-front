@@ -4,7 +4,7 @@
       <b-button variant="transparent" class="intro-btn" @click="scrollBelow">
         <span class="d-none d-lg-block">
           {{ $t("mainHero.beginButton") }}
-          <span class="btn-arrow"><b-icon-arrow-right /></span>
+          <span class="btn-arrow"><BIconArrowRight /></span>
         </span>
       </b-button>
     </div>
@@ -18,7 +18,11 @@
 </template>
 
 <script>
+import { BIconArrowRight } from "bootstrap-vue";
 export default {
+  components: {
+    BIconArrowRight,
+  },
   methods: {
     scrollBelow() {
       window.scrollTo({

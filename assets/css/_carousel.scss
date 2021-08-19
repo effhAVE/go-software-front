@@ -23,8 +23,17 @@
   }
 }
 
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
 .slick-prev,
 .slick-next {
+  z-index: 97;
   &.slick-disabled {
     display: none;
   }

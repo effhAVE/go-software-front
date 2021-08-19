@@ -63,7 +63,14 @@ export default {
   ],
 
   bootstrapVue: {
-    icons: true,
+    componentPlugins: [
+      "ButtonPlugin",
+      "ImagePlugin",
+      "LayoutPlugin",
+      "DropdownPlugin",
+      "NavbarPlugin",
+    ],
+    directivePlugins: ["VBScrollspyPlugin", "VBVisiblePlugin"],
   },
 
   i18n,

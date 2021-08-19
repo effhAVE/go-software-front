@@ -71,9 +71,20 @@ export default {
   }
 }
 
-@include sm-max {
+@include lg-max {
+  .card-item {
+    padding-bottom: 40px;
+    perspective: 1100px;
+  }
+}
+
+@media (max-width: 400px) {
   .card-item {
     width: 100%;
+    img {
+      height: auto;
+      max-width: 100%;
+    }
   }
 }
 </style>
