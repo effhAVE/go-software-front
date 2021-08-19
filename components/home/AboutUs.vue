@@ -102,7 +102,7 @@ import { BIconArrowLeft, BIconArrowRight } from "bootstrap-vue";
 export default {
   components: {
     BIconArrowLeft,
-    BIconArrowRight
+    BIconArrowRight,
   },
   props: {
     windowWidth: {
@@ -164,6 +164,7 @@ export default {
     color: white;
     &::before,
     &::after {
+      display: block;
       content: "";
       width: 100%;
       height: 213px;
@@ -174,12 +175,12 @@ export default {
     }
 
     &::before {
-      transform: translateY(-100%);
+      transform: translateY(calc(-100% + 1px));
       top: 0;
     }
 
     &::after {
-      transform: translateY(100%) rotate(180deg);
+      transform: translateY(calc(100% - 1px)) rotate(180deg);
       bottom: 0;
     }
 
