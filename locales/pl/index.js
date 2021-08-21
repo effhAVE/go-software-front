@@ -69,6 +69,14 @@ export default {
   owners: {
     title: "Kto za tym stoi?",
     desc: "Chcemy poznać Twój pomysł, problem lub cel, który chcesz osiagnąć. Następnie dobierzemy rozwiązania najlepiej odpowiadające Twoim wymaganiom.",
+    gkTitle: "Grzegorz Kowalczyk",
+    gkPosition: "Owner / Developer",
+    gkDesc:
+      "Chcemy poznać Twój pomysł, problem lub cel, który chcesz osiagnąć. Następnie dobierzemy rozwiązania najlepiej odpowiadające Twoim wymaganiom.",
+    ocTitle: "Oskar Czubacki",
+    ocPosition: "Manager / Designer",
+    ocDesc:
+      "Chcemy poznać Twój pomysł, problem lub cel, który chcesz osiagnąć. Następnie dobierzemy rozwiązania najlepiej odpowiadające Twoim wymaganiom.",
   },
 
   contact: {
