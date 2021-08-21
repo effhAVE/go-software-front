@@ -67,6 +67,37 @@
           </b-col>
         </component>
       </div>
+
+      <b-row class="about-owners">
+        <b-col cols="12" lg="6">
+          <h3>{{ $t("owners.title") }}</h3>
+          <p>{{ $t("owners.desc") }}</p>
+        </b-col>
+        <b-col cols="12">
+          <div class="about-owners-list">
+            <div class="about-owners-list-item">
+              <b-img src="@@/assets/img/greg.png" fluid />
+              <div class="about-owners-list-item-desc">
+                <h4>{{ $t("owners.gkTitle") }}</h4>
+                <p class="team-role">{{ $t("owners.gkPosition") }}</p>
+                <p>
+                  {{ $t("owners.gkDesc") }}
+                </p>
+              </div>
+            </div>
+            <div class="about-owners-list-item">
+              <b-img src="@@/assets/img/oscar.png" fluid />
+              <div class="about-owners-list-item-desc">
+                <h4>{{ $t("owners.ocTitle") }}</h4>
+                <p class="team-role">{{ $t("owners.ocPosition") }}</p>
+                <p>
+                  {{ $t("owners.ocDesc") }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </b-col>
+      </b-row>
     </b-container>
   </section>
 </template>
@@ -148,6 +179,93 @@ export default {
   }
 }
 
+.about-owners {
+  margin: 150px 0;
+  &-list {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+
+    &-item {
+      position: relative;
+      transition: flex-grow 0.5s;
+      &:hover {
+        flex-grow: 1;
+        img {
+          transform: scale(1.3);
+        }
+
+        &:first-of-type {
+          & > .about-owners-list-item-desc {
+            animation: slideInLeft 0.5s forwards;
+          }
+        }
+
+        &:nth-of-type(2) {
+          & > .about-owners-list-item-desc {
+            animation: slideInRight 0.5s forwards;
+          }
+        }
+
+        & > .about-owners-list-item-desc {
+          visibility: visible;
+        }
+      }
+
+      &:nth-of-type(1) {
+        & > .about-owners-list-item-desc {
+          left: 0;
+          padding: 75px 70px 0 130px;
+        }
+      }
+
+      &:nth-of-type(2) {
+        text-align: right;
+        & > .about-owners-list-item-desc {
+          right: 0;
+          padding: 75px 130px 0 70px;
+          &::before {
+            transform: scaleX(-1);
+          }
+        }
+      }
+
+      img {
+        transition: transform 0.5s;
+        max-height: 240px;
+      }
+
+      &-desc {
+        position: absolute;
+        visibility: hidden;
+        top: 50%;
+        width: 575px;
+        height: 410px;
+        z-index: -1;
+
+        &::before {
+          content: "";
+          background: url("@@/assets/img/owners-blob.png") 0 0 no-repeat;
+          width: inherit;
+          height: inherit;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: -1;
+        }
+
+        & > h4 {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+.team-role {
+  color: $accentColor;
+}
+
 @include lg-max {
   .offer {
     &-blob {
@@ -173,6 +291,73 @@ export default {
     .lowered-xl {
       margin-top: 0;
     }
+  }
+
+  .about-owners {
+    margin-top: 75px;
+    margin-bottom: 0;
+  }
+
+  .about-owners-list {
+    flex-wrap: wrap;
+    margin-top: 50px;
+    &-item {
+      width: 100%;
+      text-align: center;
+      &:nth-of-type(2) {
+        text-align: center;
+      }
+
+      &:hover {
+        img {
+          transform: none;
+        }
+
+        .about-owners-list-item-desc,
+        .about-owners-list-item-desc:nth-child(2) {
+          animation: none;
+        }
+      }
+
+      &-desc {
+        visibility: visible;
+        position: static;
+        padding: 0 !important;
+        width: auto;
+        height: auto;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        &::before {
+          background: none;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    visibility: visible;
+    transform: translate(0, -50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(140px, -50%);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    visibility: visible;
+    transform: translate(0, -50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-125px, -50%);
   }
 }
 </style>
