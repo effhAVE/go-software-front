@@ -232,7 +232,7 @@ export default {
 
       img {
         transition: transform 0.5s;
-        max-width: 180px;
+        max-height: 240px;
       }
 
       &-desc {
@@ -290,6 +290,47 @@ export default {
     margin: 50px 0;
     .lowered-xl {
       margin-top: 0;
+    }
+  }
+
+  .about-owners {
+    margin-top: 75px;
+    margin-bottom: 0;
+  }
+
+  .about-owners-list {
+    flex-wrap: wrap;
+    margin-top: 50px;
+    &-item {
+      width: 100%;
+      text-align: center;
+      &:nth-of-type(2) {
+        text-align: center;
+      }
+
+      &:hover {
+        img {
+          transform: none;
+        }
+
+        .about-owners-list-item-desc,
+        .about-owners-list-item-desc:nth-child(2) {
+          animation: none;
+        }
+      }
+
+      &-desc {
+        visibility: visible;
+        position: static;
+        padding: 0 !important;
+        width: auto;
+        height: auto;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        &::before {
+          background: none;
+        }
+      }
     }
   }
 }
