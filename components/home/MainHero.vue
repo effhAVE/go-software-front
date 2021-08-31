@@ -3,7 +3,7 @@
     <Navbar :fixed="isNavbarFixed" />
     <div class="hero-main-wrapper">
       <div class="hero-main-container">
-        <div class="hero-main-intro">
+        <div class="hero-main-intro" data-aos="fade-up">
           <p class="supertitle">{{ $t("mainHero.supertitle") }}</p>
           <h1 class="title">
             {{ $t("mainHero.title1") }} <br />
@@ -54,7 +54,7 @@ export default {
   &-container {
     padding: 0 60px;
     margin-top: 15vh;
-    min-height: 550px;
+    min-height: 640px;
   }
 
   &-intro {
@@ -78,7 +78,7 @@ export default {
   .hero-main {
     &-container {
       margin-top: 10vh;
-      min-height: 500px;
+      min-height: 600px;
     }
 
     .title {

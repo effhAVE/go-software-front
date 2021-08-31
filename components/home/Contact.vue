@@ -2,11 +2,16 @@
   <section class="section contact">
     <b-container>
       <b-row class="blob-padding">
-        <b-col cols="12" lg="5" class="has-blob contact-blob blob-primary">
+        <b-col
+          cols="12"
+          lg="5"
+          class="has-blob contact-blob blob-primary"
+          data-aos="fade-right"
+        >
           <p class="supertitle">{{ $t("contact.supertitle") }}</p>
           <h2 class="title section-title">{{ $t("contact.title") }}</h2>
         </b-col>
-        <b-col class="lowered">
+        <b-col class="lowered" data-aos="fade-left">
           <h3>
             {{ $t("contact.sectionTitle1") }} <br />
             {{ $t("contact.sectionTitle2") }}

@@ -22,12 +22,7 @@
       font-weight: 400;
       border-bottom: 2px solid transparent;
 
-      &.active {
-        border-color: $secondaryColor;
-        color: $primaryColor;
-      }
-
-      &:not(.dropdown-toggle)::after {
+      &:not(.dropdown-toggle)::before {
         content: "";
         transition: all 0.3s ease;
         height: 2px;
@@ -42,8 +37,9 @@
         color: $primaryColor;
       }
 
-      &:hover {
-        &::after {
+      &:hover,
+      &.active {
+        &::before {
           background-color: $secondaryColor;
           width: 100%;
         }

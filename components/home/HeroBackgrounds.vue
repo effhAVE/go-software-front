@@ -1,6 +1,6 @@
 <template>
   <div class="scene">
-    <div class="hero-main-intro">
+    <div class="hero-main-intro" data-aos="fade-up" data-aos-offset="0">
       <b-button variant="transparent" class="intro-btn" @click="scrollBelow">
         <span class="d-none d-lg-block">
           {{ $t("mainHero.beginButton") }}
@@ -10,6 +10,7 @@
     </div>
     <img src="@@/assets/img/water.svg" class="water-bg" alt="" />
     <img src="@@/assets/img/lighthouse.svg" class="lighthouse-bg" alt="" />
+    <img src="@@/assets/img/light.png" class="light-bg" alt="" />
     <img src="@@/assets/img/boat.svg" class="boat-bg" alt="" />
     <img src="@@/assets/img/buoy.svg" class="buoy-bg" alt="" />
     <img src="@@/assets/img/sky.svg" class="sky-bg" alt="" />
@@ -84,11 +85,17 @@ export default {
 .lighthouse-bg {
   position: absolute;
   right: 15px;
-  bottom: 65px;
-  height: 70vh;
-  min-height: 500px;
-  max-height: 650px;
+  bottom: 68px;
+  height: 630px;
   z-index: 4;
+}
+
+.light-bg {
+  position: absolute;
+  right: 410px;
+  bottom: 428px;
+  height: 280px;
+  z-index: 3;
 }
 
 .water-bg {
@@ -117,7 +124,7 @@ export default {
 .sky-bg {
   position: absolute;
   left: 230px;
-  bottom: 260px;
+  bottom: 310px;
   z-index: 2;
 }
 
@@ -131,8 +138,15 @@ export default {
 
 @media (max-width: 1600px) {
   .lighthouse-bg {
+    height: 540px;
     right: 25px;
     bottom: 78px;
+  }
+
+  .light-bg {
+    right: 370px;
+    bottom: 385px;
+    height: 240px;
   }
 }
 
@@ -161,6 +175,10 @@ export default {
     right: -25px;
   }
 
+  .light-bg {
+    right: 320px;
+  }
+
   .birds-bg {
     left: 300px;
     transform: none;
@@ -177,6 +195,12 @@ export default {
     min-height: auto;
     height: 450px;
     bottom: 75px;
+  }
+
+  .light-bg {
+    right: 260px;
+    bottom: 336px;
+    height: 195px;
   }
 
   .water-bg {
@@ -206,6 +230,10 @@ export default {
 @include md-max {
   .lighthouse-bg {
     right: -200px;
+  }
+
+  .light-bg {
+    right: 85px;
   }
 
   .water-bg {
@@ -238,6 +266,12 @@ export default {
   .lighthouse-bg {
     height: 260px;
     right: -100px;
+  }
+
+  .light-bg {
+    right: 65px;
+    bottom: 220px;
+    height: 120px;
   }
 }
 
