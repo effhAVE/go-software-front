@@ -9,74 +9,102 @@ export default {
     contact: "Kontakt",
   },
   mainHero: {
-    title1: `Z nami osiągniesz`,
-    title2: `swój cel`,
+    title1: `Realizujemy Twoje`,
+    title2: `pomysły i cele`,
+    // title1: `Zamień swój pomysł`,
+    // title2: `w rzeczywisty produkt`,
     supertitle: "Najlepsze rozwiązania IT dla Twojego biznesu",
-    beginButton: "Zaczynamy",
+    beginButton: "Rozpocznij",
   },
 
   aboutUs: {
     title: "O NAS",
     supertitle: "Kim jesteśmy?",
+
     sectionTitle1:
-      "Tworzymy presonalizowane rozwiązania IT, dla Twojego biznesu",
+      "Tworzymy personalizowane rozwiązania IT dla Twojego biznesu",
     sectionParagraph1: `W erze globalnej cyfryzacji prezentacja firmy lub marki w internecie
-            to podstawa. Dzięki naszym rozwiązaniom pomożemy rozwinąć Twój
-            biznes i wypromować go w sieci. W erze globalnej cyfryzacji
-            prezentacja firmy lub marki w internecie to podstawa. Dzięki naszym
-            rozwiązaniom pomożemy rozwinąć Twój biznes i wypromować go w sieci.`,
-    sectionTitle2: "Co chciałbyś osiągnąć?",
-    sectionParagraph2: `Chcemy poznać Twój pomysł, problem lub cel, który chcesz osiagnąć. Skupiamy się na tym aby rozwiązywac rzeczywiste problemy i spełniać konkretne potrzeby. Następnie dobierzemy rozwiązania najlepiej odpowiadające Twoim wymaganiom.`,
+            to podstawa. Skuteczna reklama w sieci potrafi znacząco zwiększyć zasięg i dostępność 
+            usług, zwiększając dynamikę rozwoju Twojego biznesu. 
+            Warto więc znaleźć swoje prywatne miejsce w wirtualnym świecie - z nami to możliwe.`,
+
+    sectionTitle2: "Zamienimy Twój pomysł w rzeczywisty produkt",
+    sectionParagraph2: `Najpierw chcemy poznać Twój pomysł, problem lub cel. 
+            Następnie szukamy rozwiązań najlepiej spełniających wymagania Twoje i Twoich odbiorców.
+            Sklep lub aplikacja internetowa, blog lub strona WWW? 
+            Dbamy o skuteczną i profesjonalną realizację projektu - od idei do wdrożenia.`,
+
     processTitle: "Jak działamy?",
-    processSubtitle: "Poznaj cykl życia każdego projektu w GO Software.",
-    process1Name: "Discovery",
-    process1Desc: `Lorem ipsum to tekst składający się z łacińskich i
-                quasi-łacińskich wyrazów, mający korzenie w klasycznej łacinie,
-                wzorowany na fragmencie traktatu Cycerona`,
-    process2Name: "Design",
-    process2Desc: `Lorem ipsum to tekst składający się z łacińskich i
-                quasi-łacińskich wyrazów.`,
-    process3Name: "Creation",
-    process3Desc: `Lorem ipsum to tekst składający się z łacińskich i
-                quasi-łacińskich wyrazów, mający korzenie w klasycznej łacinie,
-                wzorowany na fragmencie traktatu Cycerona`,
-    process4Name: "Implementation",
-    process4Desc: `Lorem ipsum to tekst składający się z łacińskich i
-                quasi-łacińskich wyrazów.`,
+    processSubtitle: "Poznaj cykl życia projektu w GO Software.",
+
+    process1Name: "Odkrywanie",
+    process1Desc: `Na początku chcemy dokładnie poznać Twoje potrzeby i oczekiwania.
+            W ten sposób zaproponujemy najlepsze rozwiązania 
+            i utworzymy wspólną wizję finalnego produktu.`,
+
+    process2Name: "Projektowanie",
+    process2Desc: `Przygotowujemy pierwszą wizualną prezentację produktu w postaci makiet i grafik
+            oraz dokumentacji. W tym momencie zdecydujesz, czy chcesz wdrażać swój pomysł w życie.`,
+
+    process3Name: "Tworzenie",
+    process3Desc: `Produkt powstaje na Twoich oczach. 
+            Dobieramy najlepsze technologie, dając Ci pewność,  
+            że dostarczone rozwiązanie spełni Twoje oczekiwania 
+            w wyznaczonym budżecie i czasie.`,
+
+    process4Name: "Wdrożenie",
+    process4Desc: `Kiedy wszystko dopięte jest na ostatni guzik, czekamy na Twoją decyzję. 
+            Wdrażamy gotowe rozwiązanie, by niebawem dowiedział się o tym cały internet!`,
   },
 
   offer: {
     title: "OFERTA",
     supertitle: "Co robimy?",
-    solutionsTitle: "Personalizowane rozwiązania webowe",
-    solutionsDesc: `Chcemy poznać Twój pomysł, problem lub cel, który chcesz osiagnąć.
-            Następnie dobierzemy rozwiązania najlepiej odpowiadające Twoim
-            wymaganiom.`,
+    solutionsTitle: "Nowoczesne rozwiązania webowe",
+    solutionsDesc: `Tworzymy rozwiązania, które realnie spełniają oczekiwania 
+            naszych klientów i użytkowników. 
+            Przywiązujemy wagę do najmniejszych szczegółów, 
+            aby finalny produkt gwarantował zadowolenie klienta w każdym calu.`,
+
     card1Title: "Aplikacje i strony internetowe",
-    card1Desc:
-      "Tworzymy aplikacje i strony internetowe spełniające potrzeby naszych klientów i użytkowników. Sklep, aplikacja lub serwis internetowy? Sprostamy Twoim oczekiwaniom. Lubimy walić wiadro i pisać teksty, które potem będą do zmiany bo tymczasowo są zwykłymi zapchaj kiszke.",
+    card1Desc: `Potrzebujesz responsywnej aplikacji, sklepu lub strony internetowej dla 
+            Twojej marki? Tworzymy dedykowane rozwiązania webowe w technologiach, 
+            takich jak Vue.js, React, Node.js i innych.`,
+
     card2Title: "Blogi i landing page",
-    card2Desc:
-      "Tworzymy aplikacje i strony internetowe spełniające potrzeby naszych klientów i użytkowników. Sklep, aplikacja lub serwis internetowy? Sprostamy Twoim oczekiwaniom. Lubimy walić wiadro i pisać teksty, które potem będą do zmiany bo tymczasowo są zwykłymi zapchaj kiszke.",
+    card2Desc: `Chciałbyś założyć bloga lub stworzyć swoją prywatną wizytówką w sieci? 
+            Przygotujemy dla Ciebie stronę wykorzystującą najpopularniejsze systemy 
+            zarządzania treścią, takie jak Wordpress lub Strapi.`,
+
     card3Title: "Projekty graficzne stron i aplikacji",
-    card3Desc:
-      "Tworzymy aplikacje i strony internetowe spełniające potrzeby naszych klientów i użytkowników. Sklep, aplikacja lub serwis internetowy? Sprostamy Twoim oczekiwaniom. Lubimy walić wiadro i pisać teksty, które potem będą do zmiany bo tymczasowo są zwykłymi zapchaj kiszke.",
+    card3Desc: `Chciałbyś założyć bloga lub stworzyć swoją prywatną wizytówką w sieci? 
+            Przygotujemy dla Ciebie stronę wykorzystującą najpopularniejsze systemy zarządzania treścią, 
+            takie jak Wordpress lub Strapi.`,
+
     card4Title: "Audyty stron i marketing",
-    card4Desc:
-      "Tworzymy aplikacje i strony internetowe spełniające potrzeby naszych klientów i użytkowników. Sklep, aplikacja lub serwis internetowy? Sprostamy Twoim oczekiwaniom. Lubimy walić wiadro i pisać teksty, które potem będą do zmiany bo tymczasowo są zwykłymi zapchaj kiszke.",
+    card4Desc: `Zastanawiasz się, czy warto odświeżyć lub usprawnić swoją obecną stronę? 
+            Przeprowadzimy audyt Twojego serwisu w poszukiwaniu możliwych usprawnień. 
+            Współpracujemy z agencjami marketingowymi, które pomogą Ci również 
+            wypromować Twój biznes w sieci.`,
   },
 
   owners: {
     title: "Kto za tym stoi?",
-    desc: "Chcemy poznać Twój pomysł, problem lub cel, który chcesz osiagnąć. Następnie dobierzemy rozwiązania najlepiej odpowiadające Twoim wymaganiom.",
+    desc: `Za wszystko co tworzymy odpowiedzialni są ludzie. 
+        Poznaj nas bliżej i dowiedz się w czyje ręce powierzasz swój pomysł.
+        Warto nam zaufać!`,
+
     gkTitle: "Grzegorz Kowalczyk",
     gkPosition: "Owner / Developer",
-    gkDesc:
-      "Chcemy poznać Twój pomysł, problem lub cel, który chcesz osiagnąć. Następnie dobierzemy rozwiązania najlepiej odpowiadające Twoim wymaganiom.",
+    gkDesc: ``,
+
     ocTitle: "Oskar Czubacki",
     ocPosition: "Manager / Designer",
-    ocDesc:
-      "Chcemy poznać Twój pomysł, problem lub cel, który chcesz osiagnąć. Następnie dobierzemy rozwiązania najlepiej odpowiadające Twoim wymaganiom.",
+    ocDesc: `W GO Software odpowiadam za pierwszy kontakt z klientem i dbam o to, 
+        by projekt od samego początku szedł po właściwych torach. 
+        Sprawuję opiekę nad przygotowaniem szczegółowej analizy, 
+        projektuję makiety, grafiki praz przekładam wymagania biznesowe na 
+        zadania dla programistów.`
   },
 
   contact: {
@@ -85,7 +113,7 @@ export default {
     sectionTitle1: "Zainteresowany?",
     sectionTitle2: "Skontaktuj się z nami",
     sectionDesc:
-      "Wyślij nam wiadomość e-mail, a my odezwiemy się do Ciebie. Poznając Twoje potrzeby zaproponujemy Ci najlepsze rozwiązania.",
+      "Wyślij nam wiadomość e-mail, a my odezwiemy się do Ciebie.",
     sendButton: "Wyślij wiadomość",
     showNumber: "Pokaż numer",
   },
@@ -95,11 +123,29 @@ export default {
     supertitle: "Co to są te ciasteczka?",
     sectionTitle1: "Informacje o stosowanych plikach cookies na stronie",
     sectionParagraph1:
-      "Zależy nam, aby trafiać do jak najszerszej grupy odbiorców naszej witryny. Dlatego gromadzimy dane analityczne użytkowników odwiedzających naszą stronę, aby jeszcze lepiej dostosować naszą ofertę do potrzeb klientów.",
-    point01: `Pliki cookies to niewielkie informacje tekstowe, wysyłane przez serwer www i zapisywane na komputerze Użytkownika (bądź innym urządzeniu, z którego korzysta). Serwis wykorzystuje pliki cookies w celu rozpoznawania osobistych preferencji Użytkownika. Innymi słowy stosowane przez Serwis pliki cookies pozwalają na rozpoznanie komputera Użytkownika w czasie kolejnej wizyty w Serwisie i mają jedynie ułatwiać korzystanie z Serwisu.`,
-    point02: `Serwis wykorzystuje oraz umożliwia korzystanie z plików cookies podmiotom trzecim (Google AdWords, GoogleAnalytics) w celach statystycznych oraz reklamowych.`,
-    point03: `To Użytkownik decyduje, czy chce, aby pliki cookies były zapisywane na jego komputerze. Może dezaktywować lub całkowicie wyłączyć pliki cookies w opcjach swojej przeglądarki internetowej lub wybierając odpowiednią opcję w programach typu Firewall. Może również usunąć zapisane do tej pory pliki cookies.`,
-    point04: `Użytkownik może zablokować usługę Analytics dla reklam displayowych oraz dostosowywać reklamy w sieci reklamowej Google w Menedżerze preferencji reklam.`,
-    point05: `Wyłączenie plików cookies może jednak spowodować, niedogodności w korzystaniu z naszego serwisu. `,
+      `Zależy nam, aby trafiać do jak najszerszej grupy odbiorców naszej witryny. 
+      Dlatego gromadzimy podstawowe dane analityczne odwiedzających stronę, 
+      aby jeszcze lepiej dostosować naszą ofertę do potrzeb klientów.`,
+
+    point01: `Pliki cookies to niewielkie informacje tekstowe, 
+    wysyłane przez serwer www i zapisywane na komputerze Użytkownika 
+    (bądź innym urządzeniu, z którego korzysta). 
+    Serwis wykorzystuje pliki cookies w celu rozpoznawania osobistych preferencji Użytkownika.
+    Innymi słowy stosowane przez Serwis pliki cookies pozwalają na rozpoznanie komputera Użytkownika 
+    w czasie kolejnej wizyty w Serwisie i mają jedynie ułatwiać korzystanie z Serwisu.`,
+
+    point02: `Serwis wykorzystuje oraz umożliwia korzystanie z plików cookies podmiotom trzecim 
+    (Google AdWords, GoogleAnalytics) w celach statystycznych oraz reklamowych.`,
+
+    point03: `To Użytkownik decyduje, czy chce, aby pliki cookies były zapisywane na jego komputerze. 
+    Może dezaktywować lub całkowicie wyłączyć pliki cookies w opcjach swojej przeglądarki internetowej 
+    lub wybierając odpowiednią opcję w programach typu Firewall. 
+    Może również usunąć zapisane do tej pory pliki cookies.`,
+
+    point04: `Użytkownik może zablokować usługę Analytics dla reklam displayowych 
+    oraz dostosowywać reklamy w sieci reklamowej Google w Menedżerze preferencji reklam.`,
+
+    point05: `Wyłączenie plików cookies może jednak spowodować, niedogodności 
+    w korzystaniu z naszego serwisu. `,
   },
 };
