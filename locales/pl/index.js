@@ -76,10 +76,10 @@ export default {
             Przygotujemy dla Ciebie stronę wykorzystującą najpopularniejsze systemy 
             zarządzania treścią, takie jak Wordpress lub Strapi.`,
 
-    card3Title: "Projekty graficzne stron i aplikacji",
-    card3Desc: `Chciałbyś założyć bloga lub stworzyć swoją prywatną wizytówką w sieci? 
-            Przygotujemy dla Ciebie stronę wykorzystującą najpopularniejsze systemy zarządzania treścią, 
-            takie jak Wordpress lub Strapi.`,
+    card3Title: "Analiza i projekty graficzne",
+    card3Desc: `Przygotowujemy podstawową dokumentację projektową oraz 
+            projektujemy makiety i grafiki aplikacji webowych i mobilnych gotowe 
+            do implementacji, wykorzystując narzędzie prototypowania Figma.`,
 
     card4Title: "Audyty stron i marketing",
     card4Desc: `Zastanawiasz się, czy warto odświeżyć lub usprawnić swoją obecną stronę? 
