@@ -32,7 +32,7 @@
         </b-col>
         <b-col
           cols="6"
-          class="about-us-ideas d-none d-md-block"
+          class="about-us-ideas d-none d-md-block lowered"
           data-aos="fade-left"
         >
           <img src="@@/assets/img/aboutus-ideas.png" alt="" />
