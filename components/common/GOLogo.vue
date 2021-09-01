@@ -1,5 +1,5 @@
 <template>
-  <b-img :src="getImgUrl()" alt="Logo GO Software" fluid data-not-lazy />
+  <b-img :src="getImgUrl()" alt="Logo GO Software" fluid />
 </template>
 
 <script>
