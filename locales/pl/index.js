@@ -96,8 +96,10 @@ export default {
 
     gkTitle: "Grzegorz Kowalczyk",
     gkPosition: "Owner / Developer",
-    gkDesc: `Zajmuję się programowaniem, doborem technologii do projektów oraz prowadzeniem firmy od strony prawno-finansowej. 
-    Jako urodzony perfekcjonista, dążę do tego, by każdy piksel projektu graficznego znalazł się we właściwym miejscu na stronie.`,
+    gkDesc: `Zajmuję się programowaniem, doborem technologii do projektów 
+        oraz prowadzeniem firmy od strony prawno-finansowej. 
+        Jako urodzony perfekcjonista, dążę do tego, by każdy piksel projektu graficznego 
+        znalazł się we właściwym miejscu na stronie.`,
 
     ocTitle: "Oskar Czubacki",
     ocPosition: "Manager / Designer",
