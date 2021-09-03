@@ -23,7 +23,7 @@ export default {
 @import "@/assets/css/_variables.scss";
 .card-item {
   text-align: center;
-  min-height: 390px;
+  min-height: 350px;
   width: 355px;
   perspective: 800px;
   margin: 0 auto;

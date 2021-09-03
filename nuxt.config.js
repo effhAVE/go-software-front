@@ -53,7 +53,6 @@ export default {
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     "@nuxtjs/i18n",
-    ["nuxt-lazy-load", { native: true }],
     [
       "@netsells/nuxt-hotjar",
       {

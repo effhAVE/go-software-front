@@ -95,7 +95,7 @@
                 </p>
               </div>
             </div>
-            <div class="about-owners-list-item" data-aos="fade-in">
+            <div class="about-owners-list-item">
               <b-img :src="require('@@/assets/img/oscar.png')" fluid />
               <div class="about-owners-list-item-desc">
                 <h4>{{ $t("owners.ocTitle") }}</h4>
@@ -225,7 +225,7 @@ export default {
       &:nth-of-type(1) {
         & > .about-owners-list-item-desc {
           left: 0;
-          padding: 75px 70px 0 130px;
+          padding: 45px 35px 0 100px;
         }
       }
 
@@ -233,7 +233,7 @@ export default {
         text-align: right;
         & > .about-owners-list-item-desc {
           right: 0;
-          padding: 75px 130px 0 70px;
+          padding: 45px 100px 0 35px;
           &::before {
             transform: scaleX(-1);
           }
