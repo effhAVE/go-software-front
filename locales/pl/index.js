@@ -11,8 +11,6 @@ export default {
   mainHero: {
     title1: `Realizujemy Twoje`,
     title2: `pomysły i cele`,
-    // title1: `Zamień swój pomysł`,
-    // title2: `w rzeczywisty produkt`,
     supertitle: "Najlepsze rozwiązania IT dla Twojego biznesu",
     beginButton: "Rozpocznij",
   },
@@ -64,7 +62,9 @@ export default {
     solutionsDesc: `Tworzymy rozwiązania, które realnie spełniają oczekiwania 
             naszych klientów i użytkowników. 
             Przywiązujemy wagę do najmniejszych szczegółów, 
-            aby finalny produkt gwarantował zadowolenie klienta w każdym calu.`,
+            aby finalny produkt gwarantował zadowolenie klienta w każdym calu. 
+            Zajmujemy się programowaniem, projektowaniem interfejsów aplikacji (UX/UI), 
+            wdrażamy gotowe rozwiązania oraz utrzymujemy i usprawniamy istniejące.`,
 
     card1Title: "Aplikacje i strony internetowe",
     card1Desc: `Potrzebujesz responsywnej aplikacji, sklepu lub strony internetowej dla 
