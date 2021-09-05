@@ -18,7 +18,19 @@ export default {
       htmlAttrs: {
         ...i18nHead.htmlAttrs,
       },
-      meta: [...i18nHead.meta],
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.$t("meta.description"),
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content: this.$t("meta.keywords"),
+        },
+        ...i18nHead.meta,
+      ],
     };
   },
 };
