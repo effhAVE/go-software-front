@@ -68,11 +68,11 @@ export default {
 
     card1Title: "Aplikacje i strony internetowe",
     card1Desc: `Potrzebujesz responsywnej aplikacji, sklepu lub strony internetowej dla 
-            Twojej marki? Tworzymy dedykowane rozwiązania webowe w technologiach, 
+            Twojej marki? Tworzymy dedykowane rozwiązania webowe w technologiach 
             takich jak Vue.js, React, Node.js i innych.`,
 
     card2Title: "Blogi i landing page",
-    card2Desc: `Chciałbyś założyć bloga lub stworzyć swoją prywatną wizytówką w sieci? 
+    card2Desc: `Chciałbyś założyć bloga lub stworzyć swoją prywatną wizytówkę w sieci? 
             Przygotujemy dla Ciebie stronę wykorzystującą najpopularniejsze systemy 
             zarządzania treścią, takie jak Wordpress lub Strapi.`,
 
@@ -107,7 +107,7 @@ export default {
         by projekt od samego początku szedł po właściwych torach. 
         Sprawuję opiekę nad przygotowaniem szczegółowej analizy, 
         projektuję makiety, grafiki praz przekładam wymagania biznesowe na 
-        zadania dla programistów.`
+        zadania dla programistów.`,
   },
 
   contact: {
@@ -115,8 +115,7 @@ export default {
     supertitle: "Współpracuj z nami!",
     sectionTitle1: "Zainteresowany?",
     sectionTitle2: "Skontaktuj się z nami",
-    sectionDesc:
-      "Wyślij nam wiadomość e-mail, a my odezwiemy się do Ciebie.",
+    sectionDesc: "Wyślij nam wiadomość e-mail, a my odezwiemy się do Ciebie.",
     sendButton: "Wyślij wiadomość",
     showNumber: "Pokaż numer",
   },
@@ -125,8 +124,7 @@ export default {
     title: "COOKIES",
     supertitle: "Co to są te ciasteczka?",
     sectionTitle1: "Informacje o stosowanych plikach cookies na stronie",
-    sectionParagraph1:
-      `Zależy nam, aby trafiać do jak najszerszej grupy odbiorców naszej witryny. 
+    sectionParagraph1: `Zależy nam, aby trafiać do jak najszerszej grupy odbiorców naszej witryny. 
       Dlatego gromadzimy podstawowe dane analityczne odwiedzających stronę, 
       aby jeszcze lepiej dostosować naszą ofertę do potrzeb klientów.`,
 
@@ -148,7 +146,15 @@ export default {
     point04: `Użytkownik może zablokować usługę Analytics dla reklam displayowych 
     oraz dostosowywać reklamy w sieci reklamowej Google w Menedżerze preferencji reklam.`,
 
-    point05: `Wyłączenie plików cookies może jednak spowodować, niedogodności 
-    w korzystaniu z naszego serwisu. `,
+    point05: `Wyłączenie plików cookies może jednak spowodować niedogodności 
+    w korzystaniu z naszego serwisu.`,
+  },
+
+  footer: {
+    cookiesInfo: `Na naszej stronie stosujemy pliki cookies. Korzystanie ze strony bez
+            zmiany ustawień przeglądarki oznacza, że pliki cookies będą
+            zamieszczane w Twoim urządzeniu.`,
+    cookiesReadMore: "Więcej informacji.",
+    copy: "Wszystkie prawa zastrzeżone. GO Software © 2021",
   },
 };

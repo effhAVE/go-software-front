@@ -7,13 +7,13 @@
         </b-col>
         <b-col>
           <p class="mb-sm-3 mb-5">
-            Na naszej stronie stosujemy pliki cookies. Korzystanie ze strony bez
-            zmiany ustawień przeglądarki oznacza, że pliki cookies będą
-            zamieszczane w Twoim urządzeniu.
+            {{ $t("footer.cookiesInfo") }}
             <br />
-            <nuxt-link to="/cookies"> Więcej informacji. </nuxt-link>
+            <nuxt-link to="/cookies">
+              {{ $t("footer.cookiesReadMore") }}
+            </nuxt-link>
           </p>
-          <p>Wszystkie prawa zastrzeżone. GO Software © 2021</p>
+          <p>{{ $t("footer.copy") }}</p>
         </b-col>
       </b-row>
     </b-container>

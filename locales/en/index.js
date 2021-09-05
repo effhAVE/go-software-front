@@ -16,77 +16,119 @@ export default {
   },
 
   aboutUs: {
-    title: "O NAS",
-    supertitle: "Kim jesteśmy?",
-    sectionTitle1:
-      "Tworzymy presonalizowane rozwiązania IT, dla Twojego biznesu",
-    sectionParagraph1: `W erze globalnej cyfryzacji prezentacja firmy lub marki w internecie
-            to podstawa. Dzięki naszym rozwiązaniom pomożemy rozwinąć Twój
-            biznes i wypromować go w sieci. W erze globalnej cyfryzacji
-            prezentacja firmy lub marki w internecie to podstawa. Dzięki naszym
-            rozwiązaniom pomożemy rozwinąć Twój biznes i wypromować go w sieci.`,
-    sectionTitle2: "Co chciałbyś osiągnąć?",
-    sectionParagraph2: `Chcemy poznać Twój pomysł, problem lub cel, który chcesz osiagnąć. Skupiamy się na tym aby rozwiązywac rzeczywiste problemy i spełniać konkretne potrzeby. Następnie dobierzemy rozwiązania najlepiej odpowiadające Twoim wymaganiom.`,
-    processTitle: "Jak działamy?",
-    processSubtitle: "Poznaj cykl życia każdego projektu w GO Software.",
+    title: "ABOUT US",
+    supertitle: "Who are we?",
+    sectionTitle1: "We create personalized IT solutions for your business",
+    sectionParagraph1: `In the era of global digitization, presenting a company or brand on the Internet is essential. 
+            Effective online advertising can significantly increase the reach and availability of services,
+            increasing the dynamics of your business development. 
+            So let's find your private place in the virtual world - it's possible with us.`,
+
+    sectionTitle2: "We will turn your idea into a real product",
+    sectionParagraph2: `First, we want to know your idea, problem or goal.
+             Then we look for solutions that best meet the requirements of you and your customers.
+             Store or web application, blog or website?
+             We take care of the effective and professional implementation of the project - from idea to implementation.`,
+
+    processTitle: "How do we work?",
+    processSubtitle: "Explore the project life cycle in GO Software.",
+
     process1Name: "Discovery",
-    process1Desc: `Lorem ipsum to tekst składający się z łacińskich i
-                quasi-łacińskich wyrazów, mający korzenie w klasycznej łacinie,
-                wzorowany na fragmencie traktatu Cycerona`,
+    process1Desc: `At the beginning, we want to know your needs and expectations in detail.
+             In this way, we will propose the best solutions and create a common vision of the final product.`,
+
     process2Name: "Design",
-    process2Desc: `Lorem ipsum to tekst składający się z łacińskich i
-                quasi-łacińskich wyrazów.`,
-    process3Name: "Creation",
-    process3Desc: `Lorem ipsum to tekst składający się z łacińskich i
-                quasi-łacińskich wyrazów, mający korzenie w klasycznej łacinie,
-                wzorowany na fragmencie traktatu Cycerona`,
+    process2Desc: `We prepare the first visual presentation of the product in the form of mock-ups, graphics and documentation. 
+            At this point, you will decide if you want to implement your idea.`,
+
+    process3Name: "Development",
+    process3Desc: `The product is created in front of your eyes.
+            We select the best technologies, ensuring that the delivered solution will meet your expectations within the set budget and time.`,
+
     process4Name: "Implementation",
-    process4Desc: `Lorem ipsum to tekst składający się z łacińskich i
-                quasi-łacińskich wyrazów.`,
+    process4Desc: `When everything is buttoned up, we are waiting for your decision.
+             We implement a ready solution so that the entire internet will soon find out about it!`,
   },
 
   offer: {
-    title: "OFERTA",
-    supertitle: "Co robimy?",
-    solutionsTitle: "Personalizowane rozwiązania webowe",
-    solutionsDesc: `Chcemy poznać Twój pomysł, problem lub cel, który chcesz osiagnąć.
-            Następnie dobierzemy rozwiązania najlepiej odpowiadające Twoim
-            wymaganiom.`,
-    card1Title: "Aplikacje i strony internetowe",
-    card1Desc:
-      "Tworzymy aplikacje i strony internetowe spełniające potrzeby naszych klientów i użytkowników. Sklep, aplikacja lub serwis internetowy? Sprostamy Twoim oczekiwaniom. Lubimy walić wiadro i pisać teksty, które potem będą do zmiany bo tymczasowo są zwykłymi zapchaj kiszke.",
-    card2Title: "Blogi i landing page",
-    card2Desc:
-      "Tworzymy aplikacje i strony internetowe spełniające potrzeby naszych klientów i użytkowników. Sklep, aplikacja lub serwis internetowy? Sprostamy Twoim oczekiwaniom. Lubimy walić wiadro i pisać teksty, które potem będą do zmiany bo tymczasowo są zwykłymi zapchaj kiszke.",
-    card3Title: "Projekty graficzne stron i aplikacji",
-    card3Desc:
-      "Tworzymy aplikacje i strony internetowe spełniające potrzeby naszych klientów i użytkowników. Sklep, aplikacja lub serwis internetowy? Sprostamy Twoim oczekiwaniom. Lubimy walić wiadro i pisać teksty, które potem będą do zmiany bo tymczasowo są zwykłymi zapchaj kiszke.",
-    card4Title: "Audyty stron i marketing",
-    card4Desc:
-      "Tworzymy aplikacje i strony internetowe spełniające potrzeby naszych klientów i użytkowników. Sklep, aplikacja lub serwis internetowy? Sprostamy Twoim oczekiwaniom. Lubimy walić wiadro i pisać teksty, które potem będą do zmiany bo tymczasowo są zwykłymi zapchaj kiszke.",
+    title: "OFFER",
+    supertitle: "What do we create?",
+    solutionsTitle: "Modern web solutions",
+    solutionsDesc: `We create solutions that realistically meet the expectations of our customers and users.
+            We pay attention to the smallest details so that the final product guarantees customer satisfaction in every way.
+            We deal with programming, designing application interfaces (UX / UI), 
+            we implement ready solutions as well as maintain and improve the existing ones.`,
+
+    card1Title: "Websites and web applications",
+    card1Desc: `Do you need a responsive application, store or website for your brand? 
+            We create dedicated web solutions in technologies such as Vue.js, React, Node.js and others.`,
+
+    card2Title: "Blogs and landing pages",
+    card2Desc: `Would you like to start a blog or create your own private showcase on the web?
+             We will prepare a website for you using the most popular content management systems, such as Wordpress or Strapi.`,
+
+    card3Title: "Analysis and graphic designs",
+    card3Desc: `We prepare basic design documentation and
+            we design mock-ups and graphics of web and mobile applications ready for implementation, using the Figma prototyping tool.`,
+
+    card4Title: "Website audits and marketing",
+    card4Desc: `Are you wondering if it's worth refreshing or improving your current website?
+            We will audit your website in search of possible improvements.
+            We work with marketing agencies that will also help you promote your business online.`,
+  },
+
+  owners: {
+    title: "Who is behind all of this?",
+    desc: `People are responsible for everything we create.
+            Get to know us better and find out in whose hands you entrust your idea.
+            It's worth trusting us!`,
+
+    gkTitle: "Grzegorz Kowalczyk",
+    gkPosition: "Owner / Developer",
+    gkDesc: `I deal with programming, selection of technologies for projects and running the company from the legal and financial side.
+            As a born perfectionist, I strive to ensure that every pixel of the graphic design is in the right place on the page.`,
+
+    ocTitle: "Oskar Czubacki",
+    ocPosition: "Manager / Designer",
+    ocDesc: `In GO Software, I am responsible for the first contact with the client and I make sure that the project goes on the right track from the very beginning.
+            I take care of the preparation of a detailed analysis, design mock-ups, graphics and translate business requirements into tasks for developers.`,
   },
 
   contact: {
-    title: "KONTAKT",
-    supertitle: "Współpracuj z nami!",
-    sectionTitle1: "Zainteresowany?",
-    sectionTitle2: "Skontaktuj się z nami",
-    sectionDesc:
-      "Wyślij nam wiadomość e-mail, a my odezwiemy się do Ciebie. Poznając Twoje potrzeby zaproponujemy Ci najlepsze rozwiązania.",
-    sendButton: "Wyślij wiadomość",
-    showNumber: "Pokaż numer",
+    title: "CONTACT",
+    supertitle: "Work with us!",
+    sectionTitle1: "Interested?",
+    sectionTitle2: "Get in touch",
+    sectionDesc: "Send us an e-mail and we will get back to you.",
+    sendButton: "Send",
+    showNumber: "Show number",
   },
 
   cookies: {
     title: "COOKIES",
-    supertitle: "Co to są te ciasteczka?",
-    sectionTitle1: "Informacje o stosowanych plikach cookies na stronie",
-    sectionParagraph1:
-      "Zależy nam, aby trafiać do jak najszerszej grupy odbiorców naszej witryny. Dlatego gromadzimy dane analityczne użytkowników odwiedzających naszą stronę, aby jeszcze lepiej dostosować naszą ofertę do potrzeb klientów.",
-    point01: `Pliki cookies to niewielkie informacje tekstowe, wysyłane przez serwer www i zapisywane na komputerze Użytkownika (bądź innym urządzeniu, z którego korzysta). Serwis wykorzystuje pliki cookies w celu rozpoznawania osobistych preferencji Użytkownika. Innymi słowy stosowane przez Serwis pliki cookies pozwalają na rozpoznanie komputera Użytkownika w czasie kolejnej wizyty w Serwisie i mają jedynie ułatwiać korzystanie z Serwisu.`,
-    point02: `Serwis wykorzystuje oraz umożliwia korzystanie z plików cookies podmiotom trzecim (Google AdWords, GoogleAnalytics) w celach statystycznych oraz reklamowych.`,
-    point03: `To Użytkownik decyduje, czy chce, aby pliki cookies były zapisywane na jego komputerze. Może dezaktywować lub całkowicie wyłączyć pliki cookies w opcjach swojej przeglądarki internetowej lub wybierając odpowiednią opcję w programach typu Firewall. Może również usunąć zapisane do tej pory pliki cookies.`,
-    point04: `Użytkownik może zablokować usługę Analytics dla reklam displayowych oraz dostosowywać reklamy w sieci reklamowej Google w Menedżerze preferencji reklam.`,
-    point05: `Wyłączenie plików cookies może jednak spowodować, niedogodności w korzystaniu z naszego serwisu. `,
+    supertitle: "What are these cookies?",
+    sectionTitle1: "Information on cookies used on the website",
+    sectionParagraph1: `We want to reach the widest possible audience of our website.
+       Therefore, we collect basic analytical data of website visitors to better adapt our offer to the needs of customers.`,
+
+    point01: `Cookies are small text information sent by a web server and saved on the User's computer (or other device that he uses).
+     The website uses cookies to recognize the User's personal preferences.
+     In other words, the cookies used by the Website allow the User's computer to be recognized during the next visit to the Website and are only to facilitate the use of the Website.`,
+
+    point02: `The website uses and enables the use of cookies by third parties (Google AdWords, GoogleAnalytics) for statistical and advertising purposes.`,
+
+    point03: `It is the User who decides whether he wants cookies to be stored on his computer.
+     He can disable or completely disable cookies in the options of his web browser or by selecting the appropriate option in Firewall programs.
+     He can also delete cookies saved so far.`,
+
+    point04: `The user can block the Analytics service for display ads and customize ads on the Google Display Network in the Ads Preferences Manager.`,
+
+    point05: `Disabling cookies may cause inconvenience in using our website.`,
+  },
+
+  footer: {
+    cookiesInfo: `We use cookies on our website. Using the website without changing your browser settings means that cookies will be placed on your device.`,
+    cookiesReadMore: "Read more.",
+    copy: "All rights reserved. GO Software © 2021",
   },
 };
