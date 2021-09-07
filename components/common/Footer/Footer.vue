@@ -9,11 +9,16 @@
           <p class="mb-sm-3 mb-5">
             {{ $t("footer.cookiesInfo") }}
             <br />
-            <nuxt-link to="/cookies">
+            <nuxt-link :to="localePath({ path: '/cookies' })">
               {{ $t("footer.cookiesReadMore") }}
             </nuxt-link>
           </p>
           <p>{{ $t("footer.copy") }}</p>
+          <p>
+            <a href="https://storyset.com/" class="text-accent">{{
+              $t("footer.storysetCopy")
+            }}</a>
+          </p>
         </b-col>
       </b-row>
     </b-container>

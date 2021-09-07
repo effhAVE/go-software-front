@@ -103,7 +103,7 @@ export default {
     sectionTitle1: "Interested?",
     sectionTitle2: "Get in touch",
     sectionDesc: "Send us an e-mail and we will get back to you.",
-    sendButton: "Send",
+    sendButton: "Send message",
     showNumber: "Show number",
   },
 
@@ -133,5 +133,6 @@ export default {
     cookiesInfo: `We use cookies on our website. Using the website without changing your browser settings means that cookies will be placed on your device.`,
     cookiesReadMore: "Read more.",
     copy: "All rights reserved. GO Software © 2021",
+    storysetCopy: "Illustrations by Storyset",
   },
 };

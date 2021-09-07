@@ -159,5 +159,6 @@ export default {
             zamieszczane w Twoim urządzeniu.`,
     cookiesReadMore: "Więcej informacji.",
     copy: "Wszystkie prawa zastrzeżone. GO Software © 2021",
+    storysetCopy: "Ilustracje Storyset",
   },
 };
