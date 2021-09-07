@@ -3,7 +3,7 @@ export default {
     title: "GO Software - Najlepsze rozwiązania IT dla Twojego biznesu",
     description:
       "W GO Software pracujemy nad tym, aby Twój biznes lub pomysł znalazł swoje miejsce w sieci. Tworzymy personalizowane aplikacje, sklepy i strony internetowe, blogi oraz personalne wizytówki na miarę Twoich oczekiwań i potrzeb. Zajmujemy się programowaniem, projektowaniem interfejsów aplikacji (UX/UI), wdrażamy gotowe rozwiązania oraz utrzymujemy i usprawniamy istniejące.",
-    keywords: `programowanie, projektowanie, implementacja, wdrożenie, aplikacje, aplikacje, strony internetowe, ux, ui, kodowanie, figma, grafika, marketing, biznes, oprogramowanie, sklep internetowy, rozwój, usługi programistyczne, blog, wizytówka, pomysły, aplikacja internetowa, projektowanie stron internetowych, projektowanie mobilne, dokumentacja, rozwój oprogramowania, firma tworząca oprogramowanie, rozwój oprogramowania na zamówienie, firma tworząca aplikacje, rozwój aplikacji, oprogramowanie na zamówienie`,
+    keywords: `programowanie, projektowanie, implementacja, wdrożenie, aplikacje, aplikacje, strony internetowe, ux, ui, kodowanie, figma, grafika, marketing, biznes, oprogramowanie, sklep internetowy, rozwój, usługi programistyczne, blog, wizytówka, pomysły, aplikacja internetowa, projektowanie stron internetowych, projektowanie mobilne, dokumentacja, rozwój oprogramowania, firma tworząca oprogramowanie, rozwój oprogramowania na zamówienie, firma tworząca aplikacje, rozwój aplikacji, oprogramowanie na zamówienie, strony internetowe lublin, programowanie lublin, programista lublin, projektant lublin, aplikacje internetowe lublin`,
   },
   navbar: {
     start: "Start",

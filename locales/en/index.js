@@ -3,7 +3,7 @@ export default {
     title: "GO Software - Best digital solutions for your company",
     description:
       "At GO Software we work on making sure your business or idea finds its place on the web. We create personalized applications, stores and websites, blogs and online personal business cards according to your expectations and needs. We do programming, design application interfaces (UX/UI), implement ready-made solutions as well as maintain and improve existing ones.",
-    keywords: `programming, design, implementation, applications, apps, websites, ux, ui, coding, figma, graphic, marketing, business, software, online store, development, development services, blog, business card, ideas, web application, web design, mobile design, documentation, software development, software development company, custom software development, apps development company, apps in development, app development`,
+    keywords: `programming, design, implementation, applications, apps, websites, ux, ui, coding, figma, graphic, marketing, business, software, online store, development, development services, blog, business card, ideas, web application, web design, mobile design, documentation, software development, software development company, custom software development, apps development company, apps in development, app development, web applications lublin, programming lublin, programmer lublin, designer lublin, websites lublin`,
   },
   navbar: {
     start: "Start",
