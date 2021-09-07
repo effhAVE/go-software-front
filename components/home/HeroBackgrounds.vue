@@ -10,8 +10,8 @@
     </div>
     <img src="@@/assets/img/water.svg" class="water-bg" alt="" />
     <img src="@@/assets/img/lighthouse.svg" class="lighthouse-bg" alt="" />
-    <img src="@@/assets/img/light.png" class="light-bg" alt="" />
-    <img src="@@/assets/img/boat.svg" class="boat-bg" alt="" />
+    <img src="@@/assets/img/light.webp" class="light-bg" alt="" />
+    <img src="@@/assets/img/boat.webp" class="boat-bg" alt="" />
     <img src="@@/assets/img/buoy.svg" class="buoy-bg" alt="" />
     <img src="@@/assets/img/sky.svg" class="sky-bg" alt="" />
     <img src="@@/assets/img/birds.svg" class="birds-bg" alt="" />

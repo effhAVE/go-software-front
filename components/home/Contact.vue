@@ -72,7 +72,7 @@ export default {
     &::after {
       width: 486px;
       height: 393px;
-      background: url("@@/assets/img/contact.png") no-repeat;
+      background: url("@@/assets/img/contact.webp") no-repeat;
       top: 220px;
       left: -110px;
     }

@@ -79,7 +79,7 @@ export default {
     &::after {
       width: 509px;
       height: 309px;
-      background: url("@@/assets/img/cookies.png") no-repeat;
+      background: url("@@/assets/img/cookies.webp") no-repeat;
       background-size: contain;
       top: 160px;
       left: 0;

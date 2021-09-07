@@ -35,7 +35,7 @@
           class="about-us-ideas d-none d-md-block lowered"
           data-aos="fade-left"
         >
-          <img src="@@/assets/img/aboutus-ideas.png" alt="" />
+          <img src="@@/assets/img/aboutus-ideas.webp" alt="" />
         </b-col>
       </b-row>
     </b-container>
@@ -64,7 +64,7 @@
           </template>
           <b-col cols="12" lg="5">
             <div class="process-item" data-aos="fade-in">
-              <img src="@@/assets/img/discovery.png" alt="" />
+              <img src="@@/assets/img/discovery.webp" alt="" />
               <h4>{{ $t("aboutUs.process1Name") }}</h4>
               <p>
                 {{ $t("aboutUs.process1Desc") }}
@@ -73,7 +73,7 @@
           </b-col>
           <b-col cols="12" lg="5" class="lowered-xl">
             <div class="process-item" data-aos="fade-in">
-              <img src="@@/assets/img/design.png" alt="" />
+              <img src="@@/assets/img/design.webp" alt="" />
               <h4>{{ $t("aboutUs.process2Name") }}</h4>
               <p>
                 {{ $t("aboutUs.process2Desc") }}
@@ -83,7 +83,7 @@
 
           <b-col cols="12" lg="5">
             <div class="process-item" data-aos="fade-in">
-              <img src="@@/assets/img/creation.png" alt="" class="mb-0" />
+              <img src="@@/assets/img/creation.webp" alt="" class="mb-0" />
               <h4>{{ $t("aboutUs.process3Name") }}</h4>
               <p>
                 {{ $t("aboutUs.process3Desc") }}
@@ -92,7 +92,7 @@
           </b-col>
           <b-col cols="12" lg="5" class="lowered-xl">
             <div class="process-item" data-aos="fade-in">
-              <img src="@@/assets/img/implementation.png" alt="" />
+              <img src="@@/assets/img/implementation.webp" alt="" />
               <h4>{{ $t("aboutUs.process4Name") }}</h4>
               <p>
                 {{ $t("aboutUs.process4Desc") }}
@@ -146,7 +146,7 @@ export default {
     &::after {
       width: 509px;
       height: 339px;
-      background: url("@@/assets/img/aboutus-app.png") no-repeat;
+      background: url("@@/assets/img/aboutus-app.webp") no-repeat;
       top: 130px;
       left: -100px;
     }

@@ -169,7 +169,7 @@ export default {
   &::after {
     width: 426px;
     height: 416px;
-    background: url("@@/assets/img/offer-thinking.png") no-repeat;
+    background: url("@@/assets/img/offer-thinking.webp") no-repeat;
     top: 110px;
     right: -100px;
   }
