@@ -45,6 +45,7 @@ export default {
       padding: 0;
       backface-visibility: hidden;
       transform: translateX(0);
+      background: $bgColor;
     }
 
     &-img-top {
@@ -67,6 +68,7 @@ export default {
       width: 100%;
       height: 100%;
       padding: 30px;
+      background: $bgColor;
     }
   }
 }
