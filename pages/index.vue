@@ -8,8 +8,6 @@
 </template>
 
 <script>
-import AOS from "aos";
-import "aos/dist/aos.css";
 import windowWidthMixin from "@@/mixins/windowWidth";
 import MainHero from "../components/home/MainHero.vue";
 import AboutUs from "../components/home/AboutUs.vue";
@@ -24,21 +22,5 @@ export default {
   },
 
   mixins: [windowWidthMixin],
-
-  mounted() {
-    AOS.init({ once: true });
-    let loadedImages = 0;
-    document.images.forEach((img) => {
-      if (img.complete) incrementCounter();
-      else img.addEventListener("load", incrementCounter, false);
-    });
-
-    function incrementCounter() {
-      loadedImages++;
-      if (loadedImages === document.images.length) {
-        AOS.refresh();
-      }
-    }
-  },
 };
 </script>

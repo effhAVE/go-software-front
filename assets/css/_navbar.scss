@@ -3,6 +3,10 @@
   padding-right: 60px;
   height: 70px;
   background: $bgColor;
+  &-container {
+    height: 70px;
+  }
+
   .navbar-nav {
     min-width: 515px;
     width: 40%;

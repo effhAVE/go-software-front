@@ -1,6 +1,6 @@
 <template>
   <div class="scene">
-    <div class="hero-main-intro" data-aos="fade-up" data-aos-offset="0">
+    <div class="hero-main-intro" data-aos="fade-up" data-aos-offset="-1000">
       <b-button variant="transparent" class="intro-btn" @click="scrollBelow">
         <span class="d-none d-lg-block">
           {{ $t("mainHero.beginButton") }}
